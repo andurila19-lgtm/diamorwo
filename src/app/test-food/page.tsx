@@ -13,7 +13,7 @@ export default function TestFoodPage() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const msg = `*RESERVASI TEST FOOD KATERING — MANTU WO BOYOLALI*\n\n*Nama:* ${name}\n*Nomor WA:* ${phone}\n*Rencana Tanggal Acara:* ${date}\n*Estimasi Tamu:* ${guestCount} Pax`;
-    window.open(`https://wa.me/6281234567890?text=${encodeURIComponent(msg)}`, '_blank');
+    window.open(`https://wa.me/6281575200000?text=${encodeURIComponent(msg)}`, '_blank');
     setSubmitted(true);
   };
 

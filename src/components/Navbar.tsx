@@ -83,7 +83,7 @@ export default function Navbar() {
               );
             })}
             <a
-              href="https://wa.me/6281234567890?text=Halo%20MANTU%20Wedding%20Organizer%20Boyolali%2C%20saya%20ingin%20konsultasi%20paket%20pernikahan"
+              href="https://wa.me/6281575200000?text=Halo%20MANTU%20Wedding%20Organizer%20Boyolali%2C%20saya%20ingin%20konsultasi%20paket%20pernikahan"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center min-h-[42px] px-6 bg-gold-shimmer hover:bg-secondary hover:text-white text-primary font-label-md text-xs tracking-widest uppercase transition-colors rounded-sm font-semibold shadow-md"
@@ -119,7 +119,7 @@ export default function Navbar() {
           {/* Action & Hamburger Button */}
           <div className="flex items-center gap-2">
             <a
-              href="https://wa.me/6281234567890?text=Halo%20MANTU%20Wedding%20Organizer%20Boyolali"
+              href="https://wa.me/6281575200000?text=Halo%20MANTU%20Wedding%20Organizer%20Boyolali"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center min-h-[36px] px-3.5 bg-gold-shimmer text-primary font-label-md text-[11px] tracking-wider uppercase rounded-full font-bold shadow-sm"
@@ -164,7 +164,7 @@ export default function Navbar() {
             })}
             <div className="pt-3 mt-2 border-t border-white/10">
               <a
-                href="https://wa.me/6281234567890?text=Halo%20MANTU%20Wedding%20Organizer%20Boyolali%2C%20saya%20ingin%20konsultasi%20paket%20pernikahan"
+                href="https://wa.me/6281575200000?text=Halo%20MANTU%20Wedding%20Organizer%20Boyolali%2C%20saya%20ingin%20konsultasi%20paket%20pernikahan"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setMobileMenuOpen(false)}

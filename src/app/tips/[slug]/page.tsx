@@ -69,7 +69,7 @@ export default async function TipDetailPage({ params }: { params: Promise<{ slug
             </p>
             <div className="pt-2">
               <a
-                href="https://wa.me/6281234567890?text=Halo%20MANTU%2C%20saya%20ingin%20konsultasi%20pernikahan"
+                href="https://wa.me/6281575200000?text=Halo%20MANTU%20Wedding%20Organizer%20Boyolali%2C%20saya%20ingin%20konsultasi%20pernikahan"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center min-h-[44px] bg-primary hover:bg-primary-container text-on-primary px-8 font-label-md uppercase tracking-widest text-xs rounded-sm font-semibold transition-colors shadow-sm"

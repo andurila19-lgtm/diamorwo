@@ -5,19 +5,24 @@ export default function Footer() {
     <footer id="tentang-footer" className="bg-[#00221b] text-on-primary border-t border-white/10">
       {/* MOBILE MINIMALIST FOOTER (< 768px) */}
       <div className="md:hidden px-4 py-8 space-y-6 text-center">
-        {/* Logo & Quick Tagline */}
+        {/* Logo & Google Rating */}
         <div className="space-y-2">
-          <a href="/" className="inline-block" aria-label="MANTU Wedding Organizer">
+          <a href="/" className="inline-block" aria-label="Mantu Wedding Organizer Boyolali">
             <img
               src="/images/logo-white.png"
-              alt="MANTU Wedding Organizer"
+              alt="Mantu Wedding Organizer Boyolali"
               className="h-10 w-auto object-contain mx-auto opacity-95"
               width={140}
               height={40}
             />
           </a>
-          <p className="font-body text-xs text-white/70 font-light">
-            Wedding Organizer Terpercaya Boyolali &amp; Solo Raya
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 bg-white/5 border border-gold-shimmer/30 rounded-full text-xs text-gold-shimmer font-medium">
+            <span>⭐⭐⭐⭐⭐</span>
+            <strong className="text-white">5,0</strong>
+            <span className="text-white/60">(72 Ulasan)</span>
+          </div>
+          <p className="font-body text-xs text-white/70 italic font-light">
+            &quot;Bersama MANTU, pasti TERBANTU!&quot;
           </p>
         </div>
 
@@ -28,6 +33,9 @@ export default function Footer() {
           </a>
           <a href="/galeri" className="px-3 py-1.5 bg-white/5 border border-white/10 rounded-full text-white/80 hover:text-gold-shimmer">
             Galeri
+          </a>
+          <a href="/wedding-show" className="px-3 py-1.5 bg-white/5 border border-white/10 rounded-full text-white/80 hover:text-gold-shimmer">
+            Wedding Show
           </a>
           <a href="/test-food" className="px-3 py-1.5 bg-white/5 border border-white/10 rounded-full text-white/80 hover:text-gold-shimmer">
             Test Food
@@ -40,32 +48,47 @@ export default function Footer() {
           </a>
         </div>
 
-        {/* Direct Contact Bar */}
-        <div className="flex justify-center items-center gap-4 text-xs font-body text-white/80 pt-1">
-          <a
-            href="https://wa.me/6281234567890"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-1.5 text-gold-shimmer hover:underline"
-          >
-            <span className="material-symbols-outlined text-base">call</span>
-            <span>+62 812-3456-7890</span>
-          </a>
-          <span className="text-white/20">&bull;</span>
-          <a
-            href="https://instagram.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-1.5 text-gold-shimmer hover:underline"
-          >
-            <span className="material-symbols-outlined text-base">photo_camera</span>
-            <span>@mantu_wo</span>
-          </a>
+        {/* Direct Contact Links */}
+        <div className="space-y-2 pt-1">
+          <div className="flex justify-center items-center gap-4 text-xs font-body text-white/80">
+            <a
+              href="https://wa.me/6281575200000"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1.5 text-gold-shimmer hover:underline"
+            >
+              <span className="material-symbols-outlined text-base">call</span>
+              <span>0815-7520-0000</span>
+            </a>
+            <span className="text-white/20">&bull;</span>
+            <a
+              href="https://instagram.com/mantu_wo"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1.5 text-gold-shimmer hover:underline"
+            >
+              <span className="material-symbols-outlined text-base">photo_camera</span>
+              <span>@mantu_wo</span>
+            </a>
+          </div>
+
+          <div>
+            <a
+              href="https://linktr.ee/mantu_wo"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 px-4 py-2 bg-gold-shimmer text-primary font-label-md text-[11px] tracking-wider uppercase font-bold rounded-full shadow-sm"
+            >
+              <span className="material-symbols-outlined text-sm">hub</span>
+              Linktree Kontak (Admin, Marketing &amp; Office)
+            </a>
+          </div>
         </div>
 
-        {/* Compact Copyright */}
-        <div className="pt-4 border-t border-white/10 text-[11px] text-white/40 font-body">
-          <p>&copy; 2026 MANTU Wedding Organizer Boyolali</p>
+        {/* Compact Address & Copyright */}
+        <div className="pt-4 border-t border-white/10 text-[11px] text-white/50 font-body space-y-1">
+          <p>Jl. Merapi No.50, Surowedana, Pulisen, Boyolali, Jawa Tengah 57316</p>
+          <p>&copy; 2026 Mantu Wedding Organizer Boyolali</p>
         </div>
       </div>
 
@@ -74,45 +97,50 @@ export default function Footer() {
         <div className="grid grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-12 mb-16">
           {/* Brand Column */}
           <div className="lg:col-span-4 space-y-4">
-            <a href="/" className="inline-block" aria-label="MANTU Wedding Organizer">
+            <a href="/" className="inline-block" aria-label="Mantu Wedding Organizer Boyolali">
               <img
                 src="/images/logo-white.png"
-                alt="MANTU Wedding Organizer"
+                alt="Mantu Wedding Organizer Boyolali"
                 className="h-12 lg:h-14 w-auto object-contain opacity-95"
                 width={160}
                 height={56}
               />
             </a>
-            <p className="font-body text-sm text-white/75 leading-relaxed max-w-sm font-light">
-              Keanggunan abadi dalam setiap detail. Wedding Organizer terpercaya di Boyolali &amp; Solo Raya sejak 2016.
+            <div className="flex items-center gap-2 text-gold-shimmer text-sm font-medium">
+              <span>⭐⭐⭐⭐⭐</span>
+              <span className="text-white font-semibold">5,0</span>
+              <span className="text-white/60">(72 Ulasan Google)</span>
+            </div>
+            <p className="font-body text-sm text-white/75 leading-relaxed max-w-sm font-light italic">
+              &quot;Bersama MANTU, pasti TERBANTU!&quot; — Keanggunan abadi dan ketenangan batin pernikahan di Boyolali &amp; Solo Raya.
             </p>
             <div className="flex gap-3 pt-2">
               <a
                 className="w-10 h-10 border border-white/20 flex items-center justify-center hover:border-gold-shimmer hover:text-gold-shimmer transition-colors rounded-sm text-white/80"
-                href="https://facebook.com"
+                href="https://instagram.com/mantu_wo"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Facebook MANTU Wedding Organizer"
-              >
-                <span className="material-symbols-outlined text-lg">public</span>
-              </a>
-              <a
-                className="w-10 h-10 border border-white/20 flex items-center justify-center hover:border-gold-shimmer hover:text-gold-shimmer transition-colors rounded-sm text-white/80"
-                href="https://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Instagram MANTU Wedding Organizer"
+                aria-label="Instagram MANTU @mantu_wo"
               >
                 <span className="material-symbols-outlined text-lg">photo_camera</span>
               </a>
               <a
                 className="w-10 h-10 border border-white/20 flex items-center justify-center hover:border-gold-shimmer hover:text-gold-shimmer transition-colors rounded-sm text-white/80"
-                href="https://youtube.com"
+                href="https://tiktok.com/@mantu_wo"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="YouTube MANTU Wedding Organizer"
+                aria-label="TikTok MANTU @mantu_wo"
               >
-                <span className="material-symbols-outlined text-lg">smart_display</span>
+                <span className="material-symbols-outlined text-lg">videocam</span>
+              </a>
+              <a
+                className="w-10 h-10 border border-white/20 flex items-center justify-center hover:border-gold-shimmer hover:text-gold-shimmer transition-colors rounded-sm text-white/80"
+                href="https://linktr.ee/mantu_wo"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Linktree MANTU WO"
+              >
+                <span className="material-symbols-outlined text-lg">hub</span>
               </a>
             </div>
           </div>
@@ -165,11 +193,21 @@ export default function Footer() {
               <li>
                 <a
                   className="text-white/70 hover:text-gold-shimmer transition-colors block py-0.5"
-                  href="https://wa.me/6281234567890?text=Halo%20MANTU%20Wedding%20Organizer"
+                  href="https://linktr.ee/mantu_wo"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Konsultasi Gratis
+                  Linktree Kontak
+                </a>
+              </li>
+              <li>
+                <a
+                  className="text-white/70 hover:text-gold-shimmer transition-colors block py-0.5"
+                  href="https://wa.me/6281575200000?text=Halo%20Mantu%20Wedding%20Organizer%2C%20saya%20ingin%20konsultasi"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  WhatsApp Konsultasi
                 </a>
               </li>
             </ul>
@@ -178,39 +216,48 @@ export default function Footer() {
           {/* Address & Contact Column */}
           <div className="lg:col-span-4 space-y-4">
             <h4 className="font-label-md text-xs text-gold-shimmer uppercase tracking-[0.2em] font-semibold">
-              Kantor &amp; Wilayah Layanan
+              Kantor &amp; Kontak Resmi
             </h4>
             <p className="font-body text-sm text-white/70 leading-relaxed font-light">
-              <strong className="text-white font-medium block">MANTU Wedding Management</strong>
-              Jl. Pandanaran No. 88, Siswodipuran, Boyolali, Jawa Tengah 57311
+              <strong className="text-white font-medium block">Mantu Wedding Organizer Boyolali</strong>
+              Jl. Merapi No.50, Surowedana, Pulisen, Kec. Boyolali, Kabupaten Boyolali, Jawa Tengah 57316
               <span className="block mt-1 text-xs text-white/50">Melayani: Boyolali, Solo, Karanganyar, Klaten, Sragen, Sukoharjo, &amp; Yogyakarta.</span>
             </p>
             <div className="space-y-2 pt-1 text-sm font-body">
               <a
-                href="https://wa.me/6281234567890"
+                href="https://wa.me/6281575200000"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2.5 text-white/80 hover:text-gold-shimmer transition-colors"
               >
                 <span className="material-symbols-outlined text-base text-gold-shimmer">call</span>
-                <span>+62 812-3456-7890</span>
+                <span>0815-7520-0000 (WhatsApp)</span>
               </a>
               <a
-                href="https://instagram.com"
+                href="https://linktr.ee/mantu_wo"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2.5 text-white/80 hover:text-gold-shimmer transition-colors"
+              >
+                <span className="material-symbols-outlined text-base text-gold-shimmer">hub</span>
+                <span>linktr.ee/mantu_wo (Admin, Marketing &amp; Office)</span>
+              </a>
+              <a
+                href="https://instagram.com/mantu_wo"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2.5 text-white/80 hover:text-gold-shimmer transition-colors"
               >
                 <span className="material-symbols-outlined text-base text-gold-shimmer">photo_camera</span>
-                <span>@mantu_wo</span>
+                <span>@mantu_wo (Instagram)</span>
               </a>
             </div>
           </div>
         </div>
 
         <div className="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left text-xs text-white/50 font-body">
-          <p>&copy; 2026 MANTU Wedding Organizer Boyolali. Hak Cipta Dilindungi.</p>
-          <p>Tradisi Adiluhung &bull; Ketenangan Pengantin &bull; Dedikasi Sejak 2016</p>
+          <p>&copy; 2026 Mantu Wedding Organizer Boyolali. Hak Cipta Dilindungi.</p>
+          <p>Rating 5,0 ⭐ (72 Ulasan) &bull; Bersama MANTU, pasti TERBANTU!</p>
         </div>
       </div>
     </footer>

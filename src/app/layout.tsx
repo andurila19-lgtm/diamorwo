@@ -40,6 +40,37 @@ export default function RootLayout({
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap"
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "name": "Mantu Wedding Organizer Boyolali",
+              "alternateName": "MANTU WO",
+              "description": "Jasa Pernikahan dan Wedding Organizer terbaik & terpercaya di Boyolali dan Solo Raya.",
+              "url": "https://mantuwo.com",
+              "telephone": "+6281575200000",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Jl. Merapi No.50, Surowedana, Pulisen",
+                "addressLocality": "Boyolali",
+                "addressRegion": "Jawa Tengah",
+                "postalCode": "57316",
+                "addressCountry": "ID"
+              },
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "5.0",
+                "reviewCount": "72"
+              },
+              "sameAs": [
+                "https://instagram.com/mantu_wo",
+                "https://linktr.ee/mantu_wo"
+              ]
+            })
+          }}
+        />
       </head>
       <body className={`${bodoni.variable} ${openSans.variable} font-body bg-background text-on-surface`}>
         <Navbar />

@@ -79,7 +79,7 @@ export default function HomePage() {
                 Pilihan Paket
               </a>
               <a
-                href="https://wa.me/6281234567890?text=Halo%20MANTU%20Wedding%20Organizer%20Boyolali%2C%20saya%20ingin%20konsultasi%20pernikahan"
+                href="https://wa.me/6281575200000?text=Halo%20MANTU%20Wedding%20Organizer%20Boyolali%2C%20saya%20ingin%20konsultasi%20pernikahan"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center min-h-[42px] sm:min-h-[46px] px-4 sm:px-8 bg-white/10 hover:bg-white/20 text-white border border-white/30 font-label-md text-[11px] sm:text-xs tracking-widest uppercase transition-colors rounded-sm font-semibold"
@@ -110,16 +110,16 @@ export default function HomePage() {
         <div className="max-w-container-max mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-6 text-center">
             <div className="p-2 sm:p-3 bg-surface-container-low sm:bg-transparent rounded-sm">
+              <p className="font-display text-xl sm:text-3xl md:text-4xl text-primary font-bold">5.0 ⭐</p>
+              <p className="text-[11px] sm:text-xs text-on-surface-variant font-medium mt-0.5">72 Ulasan Google</p>
+            </div>
+            <div className="p-2 sm:p-3 bg-surface-container-low sm:bg-transparent rounded-sm">
               <p className="font-display text-xl sm:text-3xl md:text-4xl text-primary font-bold">1.000+</p>
               <p className="text-[11px] sm:text-xs text-on-surface-variant font-medium mt-0.5">Pernikahan Sukses</p>
             </div>
             <div className="p-2 sm:p-3 bg-surface-container-low sm:bg-transparent rounded-sm">
               <p className="font-display text-xl sm:text-3xl md:text-4xl text-primary font-bold">50+</p>
               <p className="text-[11px] sm:text-xs text-on-surface-variant font-medium mt-0.5">Vendor Kurasi</p>
-            </div>
-            <div className="p-2 sm:p-3 bg-surface-container-low sm:bg-transparent rounded-sm">
-              <p className="font-display text-xl sm:text-3xl md:text-4xl text-primary font-bold">9 Tahun</p>
-              <p className="text-[11px] sm:text-xs text-on-surface-variant font-medium mt-0.5">Boyolali &amp; Solo</p>
             </div>
             <div className="p-2 sm:p-3 bg-surface-container-low sm:bg-transparent rounded-sm">
               <p className="font-display text-xl sm:text-3xl md:text-4xl text-primary font-bold">100%</p>
@@ -448,7 +448,7 @@ export default function HomePage() {
           </p>
           <div className="pt-2 flex flex-row items-center justify-center gap-2.5 sm:gap-3">
             <a
-              href="https://wa.me/6281234567890?text=Halo%20MANTU%20Wedding%20Organizer%20Boyolali%2C%20saya%20ingin%20konsultasi%20pernikahan"
+              href="https://wa.me/6281575200000?text=Halo%20MANTU%20Wedding%20Organizer%20Boyolali%2C%20saya%20ingin%20konsultasi%20pernikahan"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center min-h-[42px] sm:min-h-[46px] px-5 sm:px-8 bg-gold-shimmer hover:bg-secondary hover:text-white text-primary font-label-md text-[11px] sm:text-xs tracking-widest uppercase transition-colors rounded-sm font-semibold shadow-sm"

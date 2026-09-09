@@ -102,7 +102,7 @@ export default function GalleryPage() {
                   <p className="text-xs sm:text-sm text-on-surface-variant font-light">{activeLightbox.venue}</p>
                 </div>
                 <a
-                  href={`https://wa.me/6281234567890?text=${encodeURIComponent(
+                  href={`https://wa.me/6281575200000?text=${encodeURIComponent(
                     `Halo MANTU WO, saya tertarik dengan konsep pernikahan ${activeLightbox.couple} di ${activeLightbox.venue}`
                   )}`}
                   target="_blank"

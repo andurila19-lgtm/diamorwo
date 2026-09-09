@@ -40,7 +40,7 @@ export default function WeddingCalculatorPage() {
 
 _Mohon informasi ketersediaan jadwal dan rekomendasi vendor terbaik MANTU._`;
 
-    window.open(`https://wa.me/6281234567890?text=${encodeURIComponent(msg)}`, '_blank');
+    window.open(`https://wa.me/6281575200000?text=${encodeURIComponent(msg)}`, '_blank');
   };
 
   return (
