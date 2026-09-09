@@ -12,8 +12,8 @@ export default function TestFoodPage() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const msg = `*RESERVASI TEST FOOD KATERING — MANTU WO BOYOLALI*\n\n*Nama:* ${name}\n*Nomor WA:* ${phone}\n*Rencana Tanggal Acara:* ${date}\n*Estimasi Tamu:* ${guestCount} Pax`;
-    window.open(`https://wa.me/6288225322662?text=${encodeURIComponent(msg)}`, '_blank');
+    const msg = `*RESERVASI TEST FOOD KATERING — Galipat WO BOYOLALI*\n\n*Nama:* ${name}\n*Nomor WA:* ${phone}\n*Rencana Tanggal Acara:* ${date}\n*Estimasi Tamu:* ${guestCount} Pax`;
+    window.open(`https://wa.me/6288902968424?text=${encodeURIComponent(msg)}`, '_blank');
     setSubmitted(true);
   };
 
@@ -37,7 +37,7 @@ export default function TestFoodPage() {
             <div className="lg:col-span-6 space-y-6">
               <div className="bg-white p-6 sm:p-8 border border-outline-variant/30 rounded-sm shadow-sm space-y-6">
                 <h2 className="font-display text-xl sm:text-2xl text-primary font-semibold">
-                  Mengapa Wajib Test Food Bersama MANTU?
+                  Mengapa Wajib Test Food Bersama Galipat?
                 </h2>
                 <div className="space-y-4">
                   <div className="flex gap-4">
@@ -67,7 +67,7 @@ export default function TestFoodPage() {
               <div className="bg-surface-container-low p-6 border border-outline-variant/30 space-y-2 rounded-sm">
                 <h3 className="font-display text-sm sm:text-base font-semibold text-primary">Jadwal Sesi Test Food Reguler</h3>
                 <p className="text-xs sm:text-sm text-on-surface-variant leading-relaxed font-light">
-                  Setiap hari <strong>Sabtu &amp; Minggu (Pukul 12.00 - 15.00 WIB)</strong> di Dapur Kurasi MANTU Boyolali atau pada saat simulasi event berlangsung.
+                  Setiap hari <strong>Sabtu &amp; Minggu (Pukul 12.00 - 14.80 WIB)</strong> di Dapur Kurasi Galipat Boyolali atau pada saat simulasi event berlangsung.
                 </p>
               </div>
             </div>
@@ -151,7 +151,7 @@ export default function TestFoodPage() {
 
                 {submitted && (
                   <div className="p-4 bg-surface-container-high border-l-4 border-gold-shimmer text-xs text-primary font-medium rounded-sm">
-                    Pendaftaran Anda telah diteruskan ke WhatsApp Concierge MANTU Boyolali. Sampai jumpa di sesi test food!
+                    Pendaftaran Anda telah diteruskan ke WhatsApp Concierge Galipat Boyolali. Sampai jumpa di sesi test food!
                   </div>
                 )}
               </div>

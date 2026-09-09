@@ -18,7 +18,7 @@ export default function GalleryPage() {
     <main>
       <PageHeader
         eyebrow="Rekam Jejak Karya"
-        title="Galeri Inspirasi MANTU"
+        title="Galeri Inspirasi Galipat"
         description="Dokumentasi perayaan pernikahan nyata yang diorkestrasi dengan penuh cinta dan ketenangan di Boyolali &amp; Solo Raya."
         breadcrumbs={[
           { label: 'Beranda', href: '/' },
@@ -102,8 +102,8 @@ export default function GalleryPage() {
                   <p className="text-xs sm:text-sm text-on-surface-variant font-light">{activeLightbox.venue}</p>
                 </div>
                 <a
-                  href={`https://wa.me/6288225322662?text=${encodeURIComponent(
-                    `Halo Marketing MANTU WO, saya tertarik dengan konsep pernikahan ${activeLightbox.couple} di ${activeLightbox.venue}`
+                  href={`https://wa.me/6288902968424?text=${encodeURIComponent(
+                    `Halo Marketing Galipat WO, saya tertarik dengan konsep pernikahan ${activeLightbox.couple} di ${activeLightbox.venue}`
                   )}`}
                   target="_blank"
                   rel="noopener noreferrer"

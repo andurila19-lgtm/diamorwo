@@ -12,9 +12,9 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const pkg = packagesData.find((p) => p.slug === slug);
-  if (!pkg) return { title: 'Paket Tidak Ditemukan | MANTU' };
+  if (!pkg) return { title: 'Paket Tidak Ditemukan | Galipat' };
   return {
-    title: `${pkg.name} — Paket Pernikahan Boyolali | MANTU`,
+    title: `${pkg.name} — Paket Pernikahan Boyolali | Galipat`,
     description: pkg.shortDesc,
   };
 }
@@ -116,8 +116,8 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
 
                 <div className="pt-6 border-t border-outline-variant/20 space-y-3">
                   <a
-                    href={`https://wa.me/6288225322662?text=${encodeURIComponent(
-                      `Halo Marketing MANTU WO, saya tertarik dan ingin konsultasi lebih lanjut mengenai ${pkg.name} (${pkg.price})`
+                    href={`https://wa.me/6288902968424?text=${encodeURIComponent(
+                      `Halo Marketing Galipat WO, saya tertarik dan ingin konsultasi lebih lanjut mengenai ${pkg.name} (${pkg.price})`
                     )}`}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -128,8 +128,8 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
                   </a>
 
                   <a
-                    href={`https://wa.me/6288225322662?text=${encodeURIComponent(
-                      `Halo Marketing MANTU WO, saya ingin konsultasi penyesuaian budget khusus untuk ${pkg.name}`
+                    href={`https://wa.me/6288902968424?text=${encodeURIComponent(
+                      `Halo Marketing Galipat WO, saya ingin konsultasi penyesuaian budget khusus untuk ${pkg.name}`
                     )}`}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -144,9 +144,9 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
                 <span className="material-symbols-outlined text-primary text-3xl">support_agent</span>
                 <h4 className="font-display text-base text-primary font-semibold">Konsultasi Tatap Muka</h4>
                 <p className="text-xs text-on-surface-variant leading-relaxed font-light">
-                  Tim kurator MANTU siap menyambut Anda dan keluarga di kantor Boyolali untuk diskusi langsung dan bedah moodboard.
+                  Tim kurator Galipat siap menyambut Anda dan keluarga di kantor Boyolali untuk diskusi langsung dan bedah moodboard.
                 </p>
-                <p className="font-semibold text-xs text-primary">+62 812-3456-7890</p>
+                <p className="font-semibold text-xs text-primary">0889-0296-8424</p>
               </div>
             </div>
 

@@ -44,7 +44,7 @@ export default function Navbar() {
         aria-label="Navigasi Desktop"
         className={`hidden lg:block w-full transition-all duration-300 ${
           scrolled
-            ? 'bg-[#002820]/95 backdrop-blur-md border-b border-white/10 shadow-lg py-3'
+            ? 'bg-[#162035]/95 backdrop-blur-md border-b border-white/10 shadow-lg py-3'
             : 'bg-transparent border-b border-white/15 py-4'
         }`}
       >
@@ -52,16 +52,24 @@ export default function Navbar() {
           {/* Brand Logo */}
           <a
             href="/"
-            className="flex items-center gap-2 py-0.5 focus:outline-none rounded drop-shadow"
-            aria-label="MANTU Wedding Organizer - Beranda"
+            className="flex items-center gap-3 py-0.5 focus:outline-none rounded group"
+            aria-label="Galipat Wedding Organizer - Beranda"
           >
             <img
-              src="/images/logo-white.png"
-              alt="MANTU Wedding Organizer"
-              className="h-11 xl:h-12 w-auto object-contain opacity-95 hover:opacity-100 transition-opacity"
-              width={165}
-              height={48}
+              src="/images/logo.png"
+              alt="Galipat Wedding Organizer"
+              className="h-10 xl:h-11 w-10 xl:w-11 rounded-full object-cover shadow-md border border-white/20 group-hover:scale-105 transition-all"
+              width={44}
+              height={44}
             />
+            <div className="flex flex-col text-left">
+              <span className="font-display text-lg xl:text-xl font-bold tracking-wider text-white group-hover:text-gold-shimmer transition-colors leading-tight">
+                GALIPAT
+              </span>
+              <span className="font-label-md text-[9px] tracking-[0.22em] text-gold-shimmer uppercase font-semibold">
+                WEDDING ORGANIZER
+              </span>
+            </div>
           </a>
 
           {/* Desktop Navigation Links */}
@@ -83,7 +91,7 @@ export default function Navbar() {
               );
             })}
             <a
-              href="https://wa.me/6288225322662?text=Halo%20MANTU%20Wedding%20Organizer%20Boyolali%2C%20saya%20ingin%20konsultasi%20paket%20pernikahan"
+              href="https://wa.me/6288902968424?text=Halo%20Galipat%20Wedding%20Organizer%20Boyolali%2C%20saya%20ingin%20konsultasi%20paket%20pernikahan"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center min-h-[42px] px-6 bg-gold-shimmer hover:bg-secondary hover:text-white text-primary font-label-md text-xs tracking-widest uppercase transition-colors rounded-sm font-semibold shadow-md"
@@ -98,24 +106,32 @@ export default function Navbar() {
       <div className="lg:hidden px-3 pt-2">
         <nav
           id="mobileNav"
-          className="bg-[#00201a]/95 backdrop-blur-md border border-white/15 px-4 py-2.5 rounded-full flex items-center justify-between shadow-lg"
+          className="bg-[#0f172a]/95 backdrop-blur-md border border-white/15 px-3.5 py-2 rounded-full flex items-center justify-between shadow-lg"
           aria-label="Navigasi Utama Mobile"
         >
           {/* Logo Mobile */}
-          <a href="/" className="flex items-center" aria-label="Mantu Wedding Organizer Boyolali">
+          <a href="/" className="flex items-center gap-2" aria-label="Galipat Wedding Organizer Boyolali">
             <img
-              src="/images/logo-white.png"
-              alt="Mantu Wedding Organizer Boyolali"
-              className="h-8 sm:h-9 w-auto object-contain"
-              width={100}
-              height={40}
+              src="/images/logo.png"
+              alt="Galipat Wedding Organizer Boyolali"
+              className="h-8 w-8 rounded-full object-cover border border-white/20"
+              width={32}
+              height={32}
             />
+            <div className="flex flex-col text-left">
+              <span className="font-display text-sm font-bold tracking-wider text-white leading-none">
+                GALIPAT
+              </span>
+              <span className="font-label-md text-[7.5px] tracking-[0.18em] text-gold-shimmer uppercase font-semibold">
+                WEDDING ORGANIZER
+              </span>
+            </div>
           </a>
 
           {/* Action & Hamburger Button */}
           <div className="flex items-center gap-2">
             <a
-              href="https://wa.me/6288225322662?text=Halo%20MANTU%20Wedding%20Organizer%20Boyolali"
+              href="https://wa.me/6288902968424?text=Halo%20Galipat%20Wedding%20Organizer%20Boyolali"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center min-h-[36px] px-3.5 bg-gold-shimmer text-primary font-label-md text-[11px] tracking-wider uppercase rounded-full font-bold shadow-sm"
@@ -137,7 +153,7 @@ export default function Navbar() {
 
         {/* Mobile Dropdown Drawer */}
         {mobileMenuOpen && (
-          <div className="mt-1.5 bg-[#00201a] border border-white/15 rounded-2xl p-4 flex flex-col gap-1 shadow-2xl animate-in fade-in slide-in-from-top-2 duration-200">
+          <div className="mt-1.5 bg-[#0f172a] border border-white/15 rounded-2xl p-4 flex flex-col gap-1 shadow-2xl animate-in fade-in slide-in-from-top-2 duration-200">
             {navLinks.map((link) => {
               const isActive = pathname === link.href;
               return (
@@ -160,7 +176,7 @@ export default function Navbar() {
             })}
             <div className="pt-3 mt-2 border-t border-white/10">
               <a
-                href="https://wa.me/6288225322662?text=Halo%20MANTU%20Wedding%20Organizer%20Boyolali%2C%20saya%20ingin%20konsultasi%20paket%20pernikahan"
+                href="https://wa.me/6288902968424?text=Halo%20Galipat%20Wedding%20Organizer%20Boyolali%2C%20saya%20ingin%20konsultasi%20paket%20pernikahan"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setMobileMenuOpen(false)}

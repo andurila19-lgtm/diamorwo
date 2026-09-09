@@ -19,9 +19,9 @@ const openSans = Open_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Paket Pernikahan Boyolali — Wedding Organizer Terbaik | MANTU",
-  description: "Paket Pernikahan Boyolali & Solo Raya dari MANTU — wedding organizer terpercaya sejak 2016. Pilihan Permata, Zamrud, Mutiara, catering, dekorasi, vendor kurasi. Konsultasi gratis!",
-  keywords: ["paket pernikahan boyolali", "wedding organizer boyolali", "WO solo raya", "mantu wedding organizer"],
+  title: "Paket Pernikahan Boyolali — Wedding Organizer Terbaik | Galipat Wedding Organizer",
+  description: "Paket Pernikahan Boyolali & Solo Raya dari Galipat Wedding Organizer — WO profesional terpercaya. Pilihan Permata, Zamrud, Mutiara, catering, dekorasi, vendor kurasi. Konsultasi gratis!",
+  keywords: ["paket pernikahan boyolali", "wedding organizer boyolali", "WO solo raya", "galipat wedding organizer", "galipat wo"],
   icons: {
     icon: '/images/logo.png',
     apple: '/images/logo.png',
@@ -46,43 +46,37 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
-              "name": "Mantu Wedding Organizer Boyolali",
-              "alternateName": "MANTU WO",
-              "description": "Jasa Pernikahan dan Wedding Organizer terbaik & terpercaya di Boyolali dan Solo Raya.",
-              "url": "https://mantuwo.com",
-              "telephone": "+6288225322662",
+              "name": "Galipat Wedding Organizer",
+              "alternateName": ["Galipat WO", "Kantor Galipat Wedding Organizer"],
+              "description": "Galipat Wedding Organizer — Partner for your Wedding Party. Jasa Pernikahan dan Wedding Organizer terpercaya di Boyolali dan Solo Raya.",
+              "url": "https://galipatwo.com",
+              "telephone": "+6288902968424",
+              "email": "galipat.weddingorganizer@gmail.com",
               "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "Jl. Merapi No.50, Surowedana, Pulisen",
+                "streetAddress": "Jl. Prof. Soeharso Tegalmulyo Timur No.4, Karanggeneng",
                 "addressLocality": "Boyolali",
                 "addressRegion": "Jawa Tengah",
-                "postalCode": "57316",
+                "postalCode": "57312",
                 "addressCountry": "ID"
               },
               "contactPoint": [
                 {
                   "@type": "ContactPoint",
-                  "telephone": "+6288225322662",
-                  "contactType": "customer service",
-                  "areaServed": "ID",
-                  "availableLanguage": ["Indonesian", "Javanese"]
-                },
-                {
-                  "@type": "ContactPoint",
-                  "telephone": "+6281575200000",
-                  "contactType": "administration / vendor partnership",
+                  "telephone": "+6288902968424",
+                  "contactType": "customer service & wedding consultation",
                   "areaServed": "ID",
                   "availableLanguage": ["Indonesian", "Javanese"]
                 }
               ],
               "aggregateRating": {
                 "@type": "AggregateRating",
-                "ratingValue": "5.0",
-                "reviewCount": "72"
+                "ratingValue": "4.8",
+                "reviewCount": "76"
               },
               "sameAs": [
-                "https://instagram.com/mantu_wo",
-                "https://linktr.ee/mantu_wo"
+                "https://linktr.ee/galipatwo",
+                "mailto:galipat.weddingorganizer@gmail.com"
               ]
             })
           }}

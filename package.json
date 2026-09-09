@@ -1,7 +1,7 @@
 {
-  "name": "mantu-wo",
+  "name": "galipat-wo",
   "version": "1.0.0",
-  "description": "Website Resmi MANTU Wedding Organizer Boyolali",
+  "description": "Website Resmi Galipat Wedding Organizer Boyolali",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

@@ -1,5 +1,5 @@
 /* ==========================================================================
-   MANTU WEDDING ORGANIZER — BOYOLALI
+   GALIPAT WEDDING ORGANIZER — BOYOLALI
    Custom Haute Editorial Stylesheet & Dynamic Animations
    ========================================================================== */
 
@@ -43,7 +43,7 @@
 }
 
 .hero-gradient {
-  background: linear-gradient(180deg, rgba(0, 65, 53, 0.45) 0%, rgba(0, 65, 53, 0.72) 50%, rgba(0, 50, 40, 0.92) 100%);
+  background: linear-gradient(180deg, rgba(22, 32, 53, 0.55) 0%, rgba(16, 24, 40, 0.78) 50%, rgba(11, 17, 29, 0.94) 100%);
 }
 
 /* Pulse Animation for Floating WhatsApp */

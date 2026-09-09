@@ -9,25 +9,25 @@ export default function HomePage() {
   const heroSlides = [
     {
       image: '/images/mantu-team-hero.jpg',
-      alt: 'MANTU Wedding Organizer Boyolali',
+      alt: 'Galipat Wedding Organizer Boyolali',
       title: 'Solusi Pernikahan Sakral & Tenang di Boyolali',
       subtitle: 'Menjaga marwah adat Jawa dan ketenangan batin Anda dalam setiap detik perayaan cinta.',
     },
     {
       image: '/images/hero-portrait.png',
-      alt: 'Pengantin Adat Jawa MANTU',
+      alt: 'Pengantin Adat Jawa Galipat',
       title: 'Kemuliaan Tradisi dengan Sentuhan Modern',
       subtitle: 'Pakem Solo & Yogyakarta yang terkurasi anggun oleh tim pranata adat berpengalaman.',
     },
     {
       image: '/images/ballroom-candid.png',
-      alt: 'Resepsi Modern MANTU',
+      alt: 'Resepsi Modern Galipat',
       title: 'Manajemen Acara Tanpa Beban Pikiran',
       subtitle: 'Master rundown terstruktur rapi, mendampingi keluarga dari temu konsep hingga hari-H.',
     },
     {
       image: '/images/joglo-pendopo.jpg',
-      alt: 'Intimate Joglo Wedding MANTU',
+      alt: 'Intimate Joglo Wedding Galipat',
       title: 'Kehangatan Intimate Wedding di Tanah Boyolali',
       subtitle: 'Suasana pendopo asri lereng Merbabu untuk momen paling sakral dalam hidup Anda.',
     },
@@ -62,7 +62,7 @@ export default function HomePage() {
         <div className="relative z-10 max-w-container-max mx-auto px-4 sm:px-6 lg:px-8 text-center text-on-primary my-auto">
           <div className="max-w-4xl mx-auto space-y-3 sm:space-y-6">
             <span className="inline-block font-label-md text-[11px] sm:text-xs tracking-[0.25em] uppercase text-gold-shimmer font-semibold">
-              MANTU Wedding Organizer Boyolali
+              Galipat Wedding Organizer Boyolali
             </span>
             <h1 className="font-display text-2xl sm:text-4xl md:text-5xl lg:text-6xl text-white font-semibold leading-[1.14] tracking-tight">
               {heroSlides[currentSlide].title}
@@ -79,7 +79,7 @@ export default function HomePage() {
                 Pilihan Paket
               </a>
               <a
-                href="https://wa.me/6288225322662?text=Halo%20Marketing%20MANTU%20WO%2C%20saya%20ingin%20konsultasi%20paket%20pernikahan"
+                href="https://wa.me/6288902968424?text=Halo%20Marketing%20Galipat%20WO%2C%20saya%20ingin%20konsultasi%20paket%20pernikahan"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center min-h-[42px] sm:min-h-[46px] px-4 sm:px-8 bg-white/10 hover:bg-white/20 text-white border border-white/30 font-label-md text-[11px] sm:text-xs tracking-widest uppercase transition-colors rounded-sm font-semibold"
@@ -110,8 +110,8 @@ export default function HomePage() {
         <div className="max-w-container-max mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-6 text-center">
             <div className="p-2 sm:p-3 bg-surface-container-low sm:bg-transparent rounded-sm">
-              <p className="font-display text-xl sm:text-3xl md:text-4xl text-primary font-bold">5.0 ⭐</p>
-              <p className="text-[11px] sm:text-xs text-on-surface-variant font-medium mt-0.5">72 Ulasan Google</p>
+              <p className="font-display text-xl sm:text-3xl md:text-4xl text-primary font-bold">4.8 ⭐</p>
+              <p className="text-[11px] sm:text-xs text-on-surface-variant font-medium mt-0.5">76 Ulasan Google</p>
             </div>
             <div className="p-2 sm:p-3 bg-surface-container-low sm:bg-transparent rounded-sm">
               <p className="font-display text-xl sm:text-3xl md:text-4xl text-primary font-bold">1.000+</p>
@@ -216,7 +216,7 @@ export default function HomePage() {
                 <img
                   className="w-full h-full object-cover grayscale-[20%] hover:grayscale-0 transition-opacity duration-300"
                   src="/images/hero-portrait.png"
-                  alt="Tim MANTU Wedding Organizer"
+                  alt="Tim Galipat Wedding Organizer"
                   loading="lazy"
                   width={600}
                   height={750}
@@ -228,7 +228,7 @@ export default function HomePage() {
             <div className="lg:col-span-7 space-y-4 sm:space-y-6">
               <div>
                 <span className="font-label-md text-gold-shimmer text-[11px] sm:text-xs uppercase tracking-[0.2em] font-semibold block mb-1">
-                  Solusi Nyata MANTU
+                  Solusi Nyata Galipat
                 </span>
                 <h2 className="font-display text-xl sm:text-3xl md:text-4xl text-white font-semibold leading-tight">
                   Menjaga Martabat Acara dan Ketenangan Batin Dua Keluarga.
@@ -402,7 +402,7 @@ export default function HomePage() {
                 Portofolio Nyata
               </span>
               <h2 className="font-display text-xl sm:text-3xl text-primary font-semibold">
-                Galeri Inspirasi MANTU
+                Galeri Inspirasi Galipat
               </h2>
             </div>
             <a
@@ -416,7 +416,7 @@ export default function HomePage() {
           {/* Bento Mosaic Grid */}
           <div className="grid grid-cols-3 sm:grid-cols-4 gap-2 sm:gap-4">
             <a href="/galeri" className="col-span-2 row-span-2 aspect-square overflow-hidden rounded-sm bg-black/5 shadow-sm relative group block">
-              <img className="w-full h-full object-cover grayscale-[10%] group-hover:grayscale-0 transition-opacity" src="/images/mantu-team-hero.jpg" alt="Galeri Utama MANTU" loading="lazy" />
+              <img className="w-full h-full object-cover grayscale-[10%] group-hover:grayscale-0 transition-opacity" src="/images/mantu-team-hero.jpg" alt="Galeri Utama Galipat" loading="lazy" />
               <div className="absolute inset-0 bg-primary/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                 <span className="material-symbols-outlined text-white text-3xl">photo_camera</span>
               </div>
@@ -441,14 +441,14 @@ export default function HomePage() {
             Langkah Awal Ketenangan Anda
           </span>
           <h2 className="font-display text-xl sm:text-3xl md:text-4xl text-white font-semibold leading-tight">
-            Wujudkan Pernikahan Sakral &amp; Tenang Bersama MANTU
+            Wujudkan Pernikahan Sakral &amp; Tenang Bersama Galipat
           </h2>
           <p className="font-body text-xs sm:text-base text-white/80 font-light leading-relaxed max-w-lg mx-auto">
             Konsultasikan tanggal impian, perkiraan tamu, dan konsep adat Anda. Tim kami siap menyusun estimasi anggaran dan moodboard gratis.
           </p>
           <div className="pt-2 flex flex-row items-center justify-center gap-2.5 sm:gap-3">
             <a
-              href="https://wa.me/6288225322662?text=Halo%20Marketing%20MANTU%20WO%2C%20saya%20ingin%20konsultasi%20paket%20pernikahan"
+              href="https://wa.me/6288902968424?text=Halo%20Marketing%20Galipat%20WO%2C%20saya%20ingin%20konsultasi%20paket%20pernikahan"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center min-h-[42px] sm:min-h-[46px] px-5 sm:px-8 bg-gold-shimmer hover:bg-secondary hover:text-white text-primary font-label-md text-[11px] sm:text-xs tracking-widest uppercase transition-colors rounded-sm font-semibold shadow-sm"

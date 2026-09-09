@@ -26,7 +26,7 @@ export default function WeddingCalculatorPage() {
   };
 
   const handleConsult = () => {
-    const msg = `*SIMULASI ESTIMASI BIAYA WEDDING CALCULATOR — MANTU WO BOYOLALI*
+    const msg = `*SIMULASI ESTIMASI BIAYA WEDDING CALCULATOR — Galipat WO BOYOLALI*
 
 *Jumlah Undangan:* ${guests} Pax
 *Estimasi Katering:* ${formatRupiah(guests * cateringTier)} (@ ${formatRupiah(cateringTier)}/pax)
@@ -38,16 +38,16 @@ export default function WeddingCalculatorPage() {
 
 *TOTAL ESTIMASI:* ${formatRupiah(totalEstimate)}
 
-_Mohon informasi ketersediaan jadwal dan rekomendasi vendor terbaik MANTU._`;
+_Mohon informasi ketersediaan jadwal dan rekomendasi vendor terbaik Galipat._`;
 
-    window.open(`https://wa.me/6288225322662?text=${encodeURIComponent(msg)}`, '_blank');
+    window.open(`https://wa.me/6288902968424?text=${encodeURIComponent(msg)}`, '_blank');
   };
 
   return (
     <main>
       <PageHeader
         eyebrow="Simulasi Biaya Transparan"
-        title="Wedding Calculator MANTU"
+        title="Wedding Calculator Galipat"
         description="Hitung perkiraan kebutuhan anggaran pernikahan Anda di Boyolali &amp; Solo Raya secara transparan dan terukur."
         breadcrumbs={[
           { label: 'Beranda', href: '/' },

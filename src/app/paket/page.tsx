@@ -3,7 +3,7 @@ import { packagesData } from '@/data/packages';
 import PageHeader from '@/components/PageHeader';
 
 export const metadata = {
-  title: 'Paket Pernikahan Boyolali & Solo Raya — MANTU Wedding Organizer',
+  title: 'Paket Pernikahan Boyolali & Solo Raya — Galipat Wedding Organizer',
   description: 'Pilihan paket pernikahan lengkap adat Jawa & modern di Boyolali. Paket Permata, Zamrud, Mutiara, Lamaran, Siraman, dan Intimate Wedding.',
 };
 
@@ -12,7 +12,7 @@ export default function PackagesPage() {
     <main>
       <PageHeader
         eyebrow="Katalog Eksklusif"
-        title="Paket Pernikahan MANTU"
+        title="Paket Pernikahan Galipat"
         description="Pilihan paket pernikahan fleksibel dan transparan untuk mewujudkan perayaan sakral keluarga Anda di Boyolali dan Solo Raya."
         breadcrumbs={[
           { label: 'Beranda', href: '/' },
@@ -97,11 +97,11 @@ export default function PackagesPage() {
             Butuh Penyesuaian Anggaran &amp; Konsep Adat Khusus?
           </h3>
           <p className="font-body text-xs sm:text-sm text-on-surface-variant leading-relaxed font-light">
-            Setiap keluarga memiliki tradisi unik. Tim perencana MANTU siap membuatkan simulasi paket kustom sesuai jumlah undangan Anda.
+            Setiap keluarga memiliki tradisi unik. Tim perencana Galipat siap membuatkan simulasi paket kustom sesuai jumlah undangan Anda.
           </p>
           <div className="pt-1">
             <a
-              href="https://wa.me/6288225322662?text=Halo%20Marketing%20MANTU%20WO%2C%20saya%20ingin%20konsultasi%20paket%20custom"
+              href="https://wa.me/6288902968424?text=Halo%20Marketing%20Galipat%20WO%2C%20saya%20ingin%20konsultasi%20paket%20custom"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center min-h-[42px] sm:min-h-[46px] bg-primary hover:bg-primary-container text-on-primary px-6 sm:px-8 font-label-md text-[11px] sm:text-xs tracking-widest uppercase rounded-sm font-semibold transition-colors shadow-sm"

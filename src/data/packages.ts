@@ -74,7 +74,7 @@ export const packagesData: PackageItem[] = [
     price: 'Mulai Rp 93.000.000',
     priceRaw: 93000000,
     shortDesc: 'Paket all-in dengan pilihan venue indoor/outdoor, tersedia 3 tier. Venue dan catering sudah termasuk.',
-    longDesc: 'Paket Mutiara adalah solusi all-in tanpa beban. Termasuk venue ballroom ternama atau pendopo joglo prestisius di Boyolali & Solo Raya, katering berlimpah, dekorasi tematik mewah, dan tim MANTU yang menjaga setiap detik perayaan keluarga Anda.',
+    longDesc: 'Paket Mutiara adalah solusi all-in tanpa beban. Termasuk venue ballroom ternama atau pendopo joglo prestisius di Boyolali & Solo Raya, katering berlimpah, dekorasi tematik mewah, dan tim Galipat yang menjaga setiap detik perayaan keluarga Anda.',
     image: '/images/joglo-pendopo.jpg',
     venueIncluded: true,
     cateringIncluded: true,

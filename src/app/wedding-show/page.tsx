@@ -2,25 +2,25 @@ import React from 'react';
 import PageHeader from '@/components/PageHeader';
 
 export const metadata = {
-  title: 'Wedding Show & Showcase Pameran — MANTU Wedding Organizer Boyolali',
-  description: 'Jadwal pameran dan wedding showcase MANTU di Boyolali dan Solo Raya. Dapatkan promo eksklusif, cashback vendor, dan konsultasi gratis.',
+  title: 'Wedding Show & Showcase Pameran — Galipat Wedding Organizer Boyolali',
+  description: 'Jadwal pameran dan wedding showcase Galipat di Boyolali dan Solo Raya. Dapatkan promo eksklusif, cashback vendor, dan konsultasi gratis.',
 };
 
 export default function WeddingShowPage() {
   const events = [
     {
-      title: 'MANTU Royal Heritage Wedding Showcase 2025',
+      title: 'Galipat Royal Heritage Wedding Showcase 2025',
       date: '18 - 20 Oktober 2025',
       location: 'Grand Ballroom The Heritage Boyolali',
       time: '10.00 - 21.00 WIB',
       desc: 'Pameran pernikahan terbesar di Boyolali menghadirkan 35+ vendor kurasi terbaik: dekorasi pelaminan gebyok, perias paes ageng, katering nusantara, dan fotografer profesional.',
-      promo: 'Cashback Vendor s/d Rp 5.000.000 + Free Upgrade Photobooth',
+      promo: 'Cashback Vendor s/d Rp 4.800.000 + Free Upgrade Photobooth',
       status: 'Akan Datang',
     },
     {
       title: 'Solo Raya Intimate Wedding Fair',
       date: '15 - 17 November 2025',
-      location: 'Pendopo Ageng Siswodipuran Boyolali',
+      location: 'Pendopo Ageng Karanggeneng Boyolali',
       time: '11.00 - 20.00 WIB',
       desc: 'Showcase khusus bagi calon pengantin yang mendambakan konsep intimate wedding berbalut nuansa tradisi Jawa klasik dan modern minimalis.',
       promo: 'Free Testing Food Katering & Konsultasi Adat Gratis',
@@ -32,8 +32,8 @@ export default function WeddingShowPage() {
     <main>
       <PageHeader
         eyebrow="Pameran &amp; Event"
-        title="Wedding Show MANTU"
-        description="Temui tim MANTU dan vendor-vendor pilihan kami secara langsung di acara pameran pernikahan Boyolali &amp; Solo Raya."
+        title="Wedding Show Galipat"
+        description="Temui tim Galipat dan vendor-vendor pilihan kami secara langsung di acara pameran pernikahan Boyolali &amp; Solo Raya."
         breadcrumbs={[
           { label: 'Beranda', href: '/' },
           { label: 'Wedding Show' },
@@ -86,8 +86,8 @@ export default function WeddingShowPage() {
 
                 <div className="pt-2">
                   <a
-                    href={`https://wa.me/6288225322662?text=${encodeURIComponent(
-                      `Halo Marketing MANTU WO, saya ingin reservasi tiket / undangan khusus untuk ${ev.title}`
+                    href={`https://wa.me/6288902968424?text=${encodeURIComponent(
+                      `Halo Marketing Galipat WO, saya ingin reservasi tiket / undangan khusus untuk ${ev.title}`
                     )}`}
                     target="_blank"
                     rel="noopener noreferrer"

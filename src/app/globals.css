@@ -9,8 +9,8 @@
   }
 
   body {
-    background-color: #fcf9f8;
-    color: #1c1b1b;
+    background-color: #f8fafc;
+    color: #0f172a;
     font-family: var(--font-opensans), system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -67,7 +67,7 @@
 }
 
 .hero-gradient {
-  background: linear-gradient(180deg, rgba(0, 65, 53, 0.45) 0%, rgba(0, 65, 53, 0.72) 50%, rgba(0, 50, 40, 0.92) 100%);
+  background: linear-gradient(180deg, rgba(22, 32, 53, 0.55) 0%, rgba(16, 24, 40, 0.78) 50%, rgba(11, 17, 29, 0.94) 100%);
 }
 
 /* Pulse Animation for Floating WhatsApp */
@@ -133,14 +133,14 @@
 .custom-hover-card:hover {
   transform: translateY(-4px);
   border-color: rgba(212, 175, 55, 0.65);
-  box-shadow: 0 16px 36px rgba(0, 65, 53, 0.08);
+  box-shadow: 0 16px 36px rgba(22, 32, 53, 0.12);
 }
 
 /* Modal Backdrop & Container */
 .modal-backdrop {
   position: fixed;
   inset: 0;
-  background-color: rgba(10, 25, 20, 0.82);
+  background-color: rgba(11, 17, 29, 0.85);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   z-index: 9999;
@@ -159,7 +159,7 @@
 }
 
 .modal-container {
-  background-color: #FCFAF7;
+  background-color: #ffffff;
   border: 1px solid rgba(212, 175, 55, 0.4);
   max-width: 680px;
   width: 100%;

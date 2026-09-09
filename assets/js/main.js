@@ -1,5 +1,5 @@
 /**
- * MANTU Wedding Organizer — Boyolali
+ * Galipat Wedding Organizer — Boyolali
  * Production JavaScript Interactions
  */
 
@@ -142,7 +142,7 @@ function initLightbox() {
     item.addEventListener('click', () => {
       const img = item.querySelector('.portfolio-img');
       const title = item.querySelector('.portfolio-couple-name')?.textContent || 'Dokumentasi Perayaan';
-      const category = item.querySelector('.portfolio-category-tag')?.textContent || 'MANTU Wedding';
+      const category = item.querySelector('.portfolio-category-tag')?.textContent || 'Galipat Wedding';
       const venue = item.querySelector('.portfolio-venue-info')?.textContent || 'Boyolali & Solo Raya';
       const desc = item.getAttribute('data-desc') || 'Orkestrasi pernikahan paripurna dengan kepatuhan tata krama adat dan koordinasi vendor yang harmonis.';
       
@@ -154,7 +154,7 @@ function initLightbox() {
       modalDesc.textContent = desc;
 
       if (modalCta) {
-        modalCta.href = `https://wa.me/6281234567890?text=${encodeURIComponent('Halo MANTU WO, saya tertarik dengan konsep pernikahan ' + title + ' (' + category + ')')}`;
+        modalCta.href = `https://wa.me/6288902968424?text=${encodeURIComponent('Halo Galipat WO, saya tertarik dengan konsep pernikahan ' + title + ' (' + category + ')')}`;
       }
 
       modal.classList.add('open');
@@ -241,7 +241,7 @@ function initConsultationForm() {
 
     // Prepare WhatsApp Message
     const waText = 
-`*PERMOHONAN KONSULTASI — MANTU WEDDING ORGANIZER BOYOLALI*
+`*PERMOHONAN KONSULTASI — GALIPAT WEDDING ORGANIZER BOYOLALI*
 
 *Nama Mempelai / Perwakilan:* ${name}
 *Nomor WhatsApp:* ${phone}
@@ -250,9 +250,9 @@ function initConsultationForm() {
 *Konsep yang Diminati:* ${conceptText}
 *Catatan Tambahan:* ${notes}
 
-_Dikirim melalui formulir resmi website MANTU Wedding Organizer._`;
+_Dikirim melalui formulir resmi website Galipat Wedding Organizer._`;
 
-    const waUrl = `https://wa.me/6281234567890?text=${encodeURIComponent(waText)}`;
+    const waUrl = `https://wa.me/6288902968424?text=${encodeURIComponent(waText)}`;
 
     // Show Confirmation Alert
     if (alertBox) {

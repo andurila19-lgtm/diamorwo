@@ -3,8 +3,8 @@ import { tipsData } from '@/data/tips';
 import PageHeader from '@/components/PageHeader';
 
 export const metadata = {
-  title: 'Tips & Panduan Pernikahan — MANTU Wedding Organizer Boyolali',
-  description: 'Kumpulan tips, panduan adat Jawa, perhitungan katering, dan checklist persiapan pernikahan dari tim ahli MANTU.',
+  title: 'Tips & Panduan Pernikahan — Galipat Wedding Organizer Boyolali',
+  description: 'Kumpulan tips, panduan adat Jawa, perhitungan katering, dan checklist persiapan pernikahan dari tim ahli Galipat.',
 };
 
 export default function TipsPage() {

@@ -44,16 +44,16 @@ export const galleryData: GalleryItem[] = [
     id: 'g5',
     title: 'Uba Rampe Mahkota Cunduk Mentul',
     category: 'Detail & Ritual',
-    venue: 'MANTU Heritage Vault',
+    venue: 'Galipat Heritage Gallery',
     couple: 'Koleksi Perhiasan Sepuh Emas',
     image: '/images/wedding-artifacts.jpg'
   },
   {
     id: 'g6',
-    title: 'Tim MANTU Wedding Organizer',
+    title: 'Tim Galipat Wedding Organizer',
     category: 'Adat Jawa',
     venue: 'Grand Pelaminan Boyolali',
-    couple: 'MANTU Professional Crew',
+    couple: 'Galipat Professional Crew',
     image: '/images/mantu-team-hero.jpg'
   },
   {

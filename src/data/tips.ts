@@ -24,7 +24,7 @@ export const tipsData: TipItem[] = [
       'Pernikahan adat Jawa kaya akan simbolisme luhur. Paes yang dilukis di dahi calon pengantin bukan sekadar estetika riasan, melainkan doa suci bagi ketentraman rumah tangga.',
       'Paes Solo Putri menonjolkan bentuk daun sirih melengkung halus dengan warna hitam pekat yang melambangkan kelembutan hati dan keteguhan iman.',
       'Sementara Paes Ageng Yogyakarta memiliki tatahan prada emas di tepian paes, memancarkan aura keagungan keraton yang megah.',
-      'Tim MANTU selalu mendampingi calon pengantin dalam berkonsultasi dengan perias paes senior agar riasan selaras dengan postur tubuh dan busana yang dipilih.'
+      'Tim Galipat selalu mendampingi calon pengantin dalam berkonsultasi dengan perias paes senior agar riasan selaras dengan postur tubuh dan busana yang dipilih.'
     ]
   },
   {
@@ -40,7 +40,7 @@ export const tipsData: TipItem[] = [
       'Kekurangan makanan adalah kekhawatiran nomor satu bagi orang tua mempelai. Menghitung porsi katering memerlukan rumus rasio yang teruji.',
       'Rumus umum: Jika mengundang 500 undangan (1.000 orang), rasio ideal adalah 60% menu prasmanan (600 porsi) dan total gubukan sebanyak 4-5 kali lipat jumlah undangan (2.000–2.500 porsi gubukan).',
       'Pilihlah vendor katering yang terbiasa menangani *flow management* tamu agar refill makanan berjalan lancar tanpa antrean panjang.',
-      'MANTU memastikan tim floor coordinator katering siaga memantau kapasitas hidangan di setiap meja buffet secara real-time.'
+      'Galipat memastikan tim floor coordinator katering siaga memantau kapasitas hidangan di setiap meja buffet secara real-time.'
     ]
   },
   {

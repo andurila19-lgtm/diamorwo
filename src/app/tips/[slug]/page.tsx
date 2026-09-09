@@ -12,9 +12,9 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const tip = tipsData.find((t) => t.slug === slug);
-  if (!tip) return { title: 'Artikel Tidak Ditemukan | MANTU' };
+  if (!tip) return { title: 'Artikel Tidak Ditemukan | Galipat' };
   return {
-    title: `${tip.title} — Tips Pernikahan | MANTU`,
+    title: `${tip.title} — Tips Pernikahan | Galipat`,
     description: tip.excerpt,
   };
 }
@@ -65,11 +65,11 @@ export default async function TipDetailPage({ params }: { params: Promise<{ slug
               Ingin Berkonsultasi Seputar Konsep Acara Anda?
             </h3>
             <p className="text-xs sm:text-sm text-on-surface-variant font-light max-w-xl mx-auto leading-relaxed">
-              Tim kurator MANTU siap mendampingi Anda memilih adat yang tepat, menghitung porsi katering, dan menyusun rundown hari-H.
+              Tim kurator Galipat siap mendampingi Anda memilih adat yang tepat, menghitung porsi katering, dan menyusun rundown hari-H.
             </p>
             <div className="pt-2">
               <a
-                href="https://wa.me/6288225322662?text=Halo%20Marketing%20MANTU%20WO%2C%20saya%20ingin%20konsultasi%20pernikahan"
+                href="https://wa.me/6288902968424?text=Halo%20Marketing%20Galipat%20WO%2C%20saya%20ingin%20konsultasi%20pernikahan"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center min-h-[44px] bg-primary hover:bg-primary-container text-on-primary px-8 font-label-md uppercase tracking-widest text-xs rounded-sm font-semibold transition-colors shadow-sm"
