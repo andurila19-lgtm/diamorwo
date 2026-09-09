@@ -83,7 +83,7 @@ export default function Navbar() {
               );
             })}
             <a
-              href="https://wa.me/6281575200000?text=Halo%20MANTU%20Wedding%20Organizer%20Boyolali%2C%20saya%20ingin%20konsultasi%20paket%20pernikahan"
+              href="https://wa.me/6288225322662?text=Halo%20MANTU%20Wedding%20Organizer%20Boyolali%2C%20saya%20ingin%20konsultasi%20paket%20pernikahan"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center min-h-[42px] px-6 bg-gold-shimmer hover:bg-secondary hover:text-white text-primary font-label-md text-xs tracking-widest uppercase transition-colors rounded-sm font-semibold shadow-md"
@@ -98,20 +98,16 @@ export default function Navbar() {
       <div className="lg:hidden px-3 pt-2">
         <nav
           id="mobileNav"
-          aria-label="Navigasi Mobile"
-          className="w-full bg-[#002a22] border border-white/15 rounded-2xl shadow-xl transition-all duration-300 px-4 py-2.5 flex items-center justify-between"
+          className="bg-[#00201a]/95 backdrop-blur-md border border-white/15 px-4 py-2.5 rounded-full flex items-center justify-between shadow-lg"
+          aria-label="Navigasi Utama Mobile"
         >
-          {/* Brand Logo - Crisp White Logo */}
-          <a
-            href="/"
-            className="flex items-center py-0.5 focus:outline-none"
-            aria-label="MANTU Wedding Organizer - Beranda"
-          >
+          {/* Logo Mobile */}
+          <a href="/" className="flex items-center" aria-label="Mantu Wedding Organizer Boyolali">
             <img
               src="/images/logo-white.png"
-              alt="MANTU Wedding Organizer"
-              className="h-10 w-auto object-contain drop-shadow"
-              width={140}
+              alt="Mantu Wedding Organizer Boyolali"
+              className="h-8 sm:h-9 w-auto object-contain"
+              width={100}
               height={40}
             />
           </a>
@@ -119,7 +115,7 @@ export default function Navbar() {
           {/* Action & Hamburger Button */}
           <div className="flex items-center gap-2">
             <a
-              href="https://wa.me/6281575200000?text=Halo%20MANTU%20Wedding%20Organizer%20Boyolali"
+              href="https://wa.me/6288225322662?text=Halo%20MANTU%20Wedding%20Organizer%20Boyolali"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center min-h-[36px] px-3.5 bg-gold-shimmer text-primary font-label-md text-[11px] tracking-wider uppercase rounded-full font-bold shadow-sm"
@@ -164,7 +160,7 @@ export default function Navbar() {
             })}
             <div className="pt-3 mt-2 border-t border-white/10">
               <a
-                href="https://wa.me/6281575200000?text=Halo%20MANTU%20Wedding%20Organizer%20Boyolali%2C%20saya%20ingin%20konsultasi%20paket%20pernikahan"
+                href="https://wa.me/6288225322662?text=Halo%20MANTU%20Wedding%20Organizer%20Boyolali%2C%20saya%20ingin%20konsultasi%20paket%20pernikahan"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setMobileMenuOpen(false)}

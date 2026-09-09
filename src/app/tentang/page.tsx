@@ -133,7 +133,13 @@ export default function AboutPage() {
                   <div className="flex items-center gap-3">
                     <span className="material-symbols-outlined text-gold-shimmer text-xl flex-shrink-0">chat</span>
                     <span>
-                      <strong className="text-primary font-medium">WhatsApp Resmi:</strong> 0815-7520-0000
+                      <strong className="text-primary font-medium">Marketing 1 (Konsultasi Paket):</strong> 0882-2532-2662
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <span className="material-symbols-outlined text-gold-shimmer text-xl flex-shrink-0">handshake</span>
+                    <span>
+                      <strong className="text-primary font-medium">Admin / Kerjasama Vendor:</strong> 0815-7520-0000
                     </span>
                   </div>
                   <div className="flex items-center gap-3">
@@ -154,22 +160,31 @@ export default function AboutPage() {
                 </p>
                 <div className="flex flex-col gap-2.5 pt-2">
                   <a
-                    href="https://linktr.ee/mantu_wo"
+                    href="https://wa.me/6288225322662?text=Halo%20Marketing%20MANTU%20WO%2C%20saya%20ingin%20konsultasi%20paket%20pernikahan"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center gap-2 min-h-[44px] px-6 bg-gold-shimmer hover:bg-secondary hover:text-white text-primary font-label-md text-xs tracking-widest uppercase transition-colors rounded-sm font-bold shadow-sm"
                   >
-                    <span className="material-symbols-outlined text-base">link</span>
-                    Buka Linktree MANTU
+                    <span className="material-symbols-outlined text-base">chat</span>
+                    Chat Marketing 1 (Konsul)
                   </a>
                   <a
-                    href="https://wa.me/6281575200000?text=Halo%20MANTU%20Wedding%20Organizer%20Boyolali%2C%20saya%20ingin%20konsultasi%20pernikahan"
+                    href="https://wa.me/6281575200000?text=Halo%20Admin%2FKerjasama%20MANTU%20WO"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center gap-2 min-h-[44px] px-6 bg-primary hover:bg-primary-container text-white font-label-md text-xs tracking-widest uppercase transition-colors rounded-sm font-semibold"
                   >
-                    <span className="material-symbols-outlined text-base">chat</span>
-                    Konsultasi WhatsApp
+                    <span className="material-symbols-outlined text-base">handshake</span>
+                    Hubungi Admin / Kerjasama
+                  </a>
+                  <a
+                    href="https://linktr.ee/mantu_wo"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 min-h-[40px] px-6 border border-primary/30 hover:bg-white text-primary font-label-md text-xs tracking-widest uppercase transition-colors rounded-sm font-medium"
+                  >
+                    <span className="material-symbols-outlined text-base">hub</span>
+                    Pusat Kontak Linktree
                   </a>
                 </div>
               </div>

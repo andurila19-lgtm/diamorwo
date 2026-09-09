@@ -50,7 +50,7 @@ export default function RootLayout({
               "alternateName": "MANTU WO",
               "description": "Jasa Pernikahan dan Wedding Organizer terbaik & terpercaya di Boyolali dan Solo Raya.",
               "url": "https://mantuwo.com",
-              "telephone": "+6281575200000",
+              "telephone": "+6288225322662",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "Jl. Merapi No.50, Surowedana, Pulisen",
@@ -59,6 +59,22 @@ export default function RootLayout({
                 "postalCode": "57316",
                 "addressCountry": "ID"
               },
+              "contactPoint": [
+                {
+                  "@type": "ContactPoint",
+                  "telephone": "+6288225322662",
+                  "contactType": "customer service",
+                  "areaServed": "ID",
+                  "availableLanguage": ["Indonesian", "Javanese"]
+                },
+                {
+                  "@type": "ContactPoint",
+                  "telephone": "+6281575200000",
+                  "contactType": "administration / vendor partnership",
+                  "areaServed": "ID",
+                  "availableLanguage": ["Indonesian", "Javanese"]
+                }
+              ],
               "aggregateRating": {
                 "@type": "AggregateRating",
                 "ratingValue": "5.0",

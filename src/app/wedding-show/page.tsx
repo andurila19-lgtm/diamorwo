@@ -86,8 +86,8 @@ export default function WeddingShowPage() {
 
                 <div className="pt-2">
                   <a
-                    href={`https://wa.me/6281575200000?text=${encodeURIComponent(
-                      `Halo MANTU, saya ingin reservasi tiket / undangan khusus untuk ${ev.title}`
+                    href={`https://wa.me/6288225322662?text=${encodeURIComponent(
+                      `Halo Marketing MANTU WO, saya ingin reservasi tiket / undangan khusus untuk ${ev.title}`
                     )}`}
                     target="_blank"
                     rel="noopener noreferrer"

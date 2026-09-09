@@ -49,30 +49,38 @@ export default function Footer() {
         </div>
 
         {/* Direct Contact Links */}
-        <div className="space-y-2 pt-1">
-          <div className="flex justify-center items-center gap-4 text-xs font-body text-white/80">
+        <div className="space-y-2.5 pt-1">
+          <div className="flex flex-col gap-1.5 text-xs font-body text-white/90">
             <a
-              href="https://wa.me/6281575200000"
+              href="https://wa.me/6288225322662?text=Halo%20Marketing%20MANTU%20WO%2C%20saya%20ingin%20konsultasi%20paket%20pernikahan"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-1.5 text-gold-shimmer hover:underline"
+              className="flex items-center justify-center gap-1.5 text-gold-shimmer hover:underline"
             >
-              <span className="material-symbols-outlined text-base">call</span>
-              <span>0815-7520-0000</span>
+              <span className="material-symbols-outlined text-base">chat</span>
+              <span><strong>Marketing 1:</strong> 0882-2532-2662</span>
             </a>
-            <span className="text-white/20">&bull;</span>
+            <a
+              href="https://wa.me/6281575200000?text=Halo%20Admin%2FKerjasama%20MANTU%20WO"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-1.5 text-white/80 hover:text-gold-shimmer hover:underline"
+            >
+              <span className="material-symbols-outlined text-base">handshake</span>
+              <span><strong>Kerjasama / Admin:</strong> 0815-7520-0000</span>
+            </a>
             <a
               href="https://instagram.com/mantu_wo"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-1.5 text-gold-shimmer hover:underline"
+              className="flex items-center justify-center gap-1.5 text-white/70 hover:text-gold-shimmer hover:underline"
             >
               <span className="material-symbols-outlined text-base">photo_camera</span>
               <span>@mantu_wo</span>
             </a>
           </div>
 
-          <div>
+          <div className="pt-1">
             <a
               href="https://linktr.ee/mantu_wo"
               target="_blank"
@@ -80,7 +88,7 @@ export default function Footer() {
               className="inline-flex items-center gap-1.5 px-4 py-2 bg-gold-shimmer text-primary font-label-md text-[11px] tracking-wider uppercase font-bold rounded-full shadow-sm"
             >
               <span className="material-symbols-outlined text-sm">hub</span>
-              Linktree Kontak (Admin, Marketing &amp; Office)
+              Linktree (Admin, Marketing &amp; Office)
             </a>
           </div>
         </div>
@@ -203,11 +211,11 @@ export default function Footer() {
               <li>
                 <a
                   className="text-white/70 hover:text-gold-shimmer transition-colors block py-0.5"
-                  href="https://wa.me/6281575200000?text=Halo%20Mantu%20Wedding%20Organizer%2C%20saya%20ingin%20konsultasi"
+                  href="https://wa.me/6288225322662?text=Halo%20Marketing%20MANTU%20WO%2C%20saya%20ingin%20konsultasi%20paket"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  WhatsApp Konsultasi
+                  Marketing 1 (Konsul)
                 </a>
               </li>
             </ul>
@@ -225,13 +233,22 @@ export default function Footer() {
             </p>
             <div className="space-y-2 pt-1 text-sm font-body">
               <a
-                href="https://wa.me/6281575200000"
+                href="https://wa.me/6288225322662?text=Halo%20Marketing%20MANTU%20WO%2C%20saya%20ingin%20konsultasi%20paket%20pernikahan"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2.5 text-white/80 hover:text-gold-shimmer transition-colors"
               >
-                <span className="material-symbols-outlined text-base text-gold-shimmer">call</span>
-                <span>0815-7520-0000 (WhatsApp)</span>
+                <span className="material-symbols-outlined text-base text-gold-shimmer">chat</span>
+                <span><strong>Marketing 1:</strong> 0882-2532-2662 (Konsultasi Paket)</span>
+              </a>
+              <a
+                href="https://wa.me/6281575200000?text=Halo%20Admin%2FKerjasama%20MANTU%20WO"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2.5 text-white/80 hover:text-gold-shimmer transition-colors"
+              >
+                <span className="material-symbols-outlined text-base text-gold-shimmer">handshake</span>
+                <span><strong>Admin / Kerjasama:</strong> 0815-7520-0000</span>
               </a>
               <a
                 href="https://linktr.ee/mantu_wo"
@@ -240,7 +257,7 @@ export default function Footer() {
                 className="flex items-center gap-2.5 text-white/80 hover:text-gold-shimmer transition-colors"
               >
                 <span className="material-symbols-outlined text-base text-gold-shimmer">hub</span>
-                <span>linktr.ee/mantu_wo (Admin, Marketing &amp; Office)</span>
+                <span>linktr.ee/mantu_wo (Admin, Marketing 1, Marketing 2, Office)</span>
               </a>
               <a
                 href="https://instagram.com/mantu_wo"

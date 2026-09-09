@@ -101,7 +101,7 @@ export default function PackagesPage() {
           </p>
           <div className="pt-1">
             <a
-              href="https://wa.me/6281575200000?text=Halo%20MANTU%20Wedding%20Organizer%20Boyolali%2C%20saya%20ingin%20konsultasi%20paket%20custom"
+              href="https://wa.me/6288225322662?text=Halo%20Marketing%20MANTU%20WO%2C%20saya%20ingin%20konsultasi%20paket%20custom"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center min-h-[42px] sm:min-h-[46px] bg-primary hover:bg-primary-container text-on-primary px-6 sm:px-8 font-label-md text-[11px] sm:text-xs tracking-widest uppercase rounded-sm font-semibold transition-colors shadow-sm"

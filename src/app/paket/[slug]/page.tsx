@@ -116,8 +116,8 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
 
                 <div className="pt-6 border-t border-outline-variant/20 space-y-3">
                   <a
-                    href={`https://wa.me/6281575200000?text=${encodeURIComponent(
-                      `Halo MANTU Wedding Organizer Boyolali, saya tertarik dan ingin konsultasi lebih lanjut mengenai ${pkg.name} (${pkg.price})`
+                    href={`https://wa.me/6288225322662?text=${encodeURIComponent(
+                      `Halo Marketing MANTU WO, saya tertarik dan ingin konsultasi lebih lanjut mengenai ${pkg.name} (${pkg.price})`
                     )}`}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -128,8 +128,8 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
                   </a>
 
                   <a
-                    href={`https://wa.me/6281575200000?text=${encodeURIComponent(
-                      `Halo MANTU WO, saya ingin konsultasi penyesuaian budget khusus untuk ${pkg.name}`
+                    href={`https://wa.me/6288225322662?text=${encodeURIComponent(
+                      `Halo Marketing MANTU WO, saya ingin konsultasi penyesuaian budget khusus untuk ${pkg.name}`
                     )}`}
                     target="_blank"
                     rel="noopener noreferrer"
