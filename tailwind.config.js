@@ -1,0 +1,58 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  darkMode: 'class',
+  content: [
+    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+  ],
+  theme: {
+    extend: {
+      colors: {
+        background: '#fcf9f8',
+        surface: '#fcf9f8',
+        'ivory-surface': '#FCFAF7',
+        'surface-container': '#f0eded',
+        'surface-container-low': '#f6f3f2',
+        'surface-container-high': '#eae7e7',
+        'on-surface': '#1c1b1b',
+        'on-surface-variant': '#3f4945',
+        outline: '#6f7975',
+        'outline-variant': '#bec9c4',
+        primary: '#004135',
+        'on-primary': '#ffffff',
+        'primary-container': '#005b4b',
+        'on-primary-container': '#88d0bc',
+        'primary-fixed': '#a7f1db',
+        'primary-fixed-dim': '#8cd4c0',
+        secondary: '#775a19',
+        'secondary-container': '#fed488',
+        'secondary-fixed': '#ffdea5',
+        'secondary-fixed-dim': '#e9c176',
+        'tertiary-fixed': '#e0e3e5',
+        'gold-shimmer': '#D4AF37',
+        'deep-forest': '#004236',
+      },
+      spacing: {
+        'container-max': '1280px',
+        'section-padding-desktop': '120px',
+        'section-padding-mobile': '64px',
+        gutter: '32px',
+      },
+      fontFamily: {
+        display: ['var(--font-bodoni)', 'serif'],
+        body: ['var(--font-opensans)', 'sans-serif'],
+      },
+      fontSize: {
+        'display-lg': ['clamp(38px,6.5vw,64px)', { lineHeight: '1.1', letterSpacing: '-0.02em', fontWeight: '600' }],
+        'headline-lg': ['clamp(30px,4.5vw,48px)', { lineHeight: '1.16', fontWeight: '500' }],
+        'headline-md': ['32px', { lineHeight: '40px', fontWeight: '500' }],
+        'title-lg': ['24px', { lineHeight: '32px', fontWeight: '600' }],
+        'body-lg': ['18px', { lineHeight: '28px', fontWeight: '400' }],
+        'body-md': ['16px', { lineHeight: '24px', fontWeight: '400' }],
+        'label-md': ['14px', { lineHeight: '20px', letterSpacing: '0.05em', fontWeight: '600' }],
+      },
+    },
+  },
+  plugins: [],
+};
