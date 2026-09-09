@@ -32,7 +32,6 @@ export default function Navbar() {
     { name: 'Wedding Show', href: '/wedding-show' },
     { name: 'Test Food', href: '/test-food' },
     { name: 'Galeri', href: '/galeri' },
-    { name: 'Wedding Calculator', href: '/wedding-calculator' },
     { name: 'Tips', href: '/tips' },
     { name: 'Tentang', href: '/tentang' },
   ];

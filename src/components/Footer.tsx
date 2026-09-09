@@ -29,9 +29,6 @@ export default function Footer() {
           <a href="/galeri" className="px-3 py-1.5 bg-white/5 border border-white/10 rounded-full text-white/80 hover:text-gold-shimmer">
             Galeri
           </a>
-          <a href="/wedding-calculator" className="px-3 py-1.5 bg-white/5 border border-white/10 rounded-full text-white/80 hover:text-gold-shimmer">
-            Kalkulator
-          </a>
           <a href="/test-food" className="px-3 py-1.5 bg-white/5 border border-white/10 rounded-full text-white/80 hover:text-gold-shimmer">
             Test Food
           </a>
@@ -158,11 +155,6 @@ export default function Footer() {
               <li>
                 <a className="text-white/70 hover:text-gold-shimmer transition-colors block py-0.5" href="/tentang">
                   Tentang MANTU
-                </a>
-              </li>
-              <li>
-                <a className="text-white/70 hover:text-gold-shimmer transition-colors block py-0.5" href="/wedding-calculator">
-                  Wedding Calculator
                 </a>
               </li>
               <li>

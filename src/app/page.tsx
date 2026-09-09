@@ -456,10 +456,10 @@ export default function HomePage() {
               Konsultasi WhatsApp
             </a>
             <a
-              href="/wedding-calculator"
+              href="/paket"
               className="inline-flex items-center justify-center min-h-[42px] sm:min-h-[46px] px-4 sm:px-8 border border-white/30 hover:bg-white/10 text-white font-label-md text-[11px] sm:text-xs tracking-widest uppercase transition-colors rounded-sm font-semibold"
             >
-              Kalkulator
+              Lihat Semua Paket
             </a>
           </div>
         </div>
