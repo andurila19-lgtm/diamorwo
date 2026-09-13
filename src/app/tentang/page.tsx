@@ -61,19 +61,19 @@ export default function AboutPage() {
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2">
                 <div className="p-3 sm:p-4 bg-white border border-outline-variant/30 rounded-sm text-center">
                   <span className="font-display text-xl sm:text-2xl font-bold text-primary block">5.0 / 5</span>
-                  <p className="text-[11px] text-on-surface-variant font-medium mt-0.5">Rating Google</p>
+                  <p className="text-xs sm:text-sm text-slate-700 font-medium mt-1">Rating Google</p>
                 </div>
                 <div className="p-3 sm:p-4 bg-white border border-outline-variant/30 rounded-sm text-center">
                   <span className="font-display text-xl sm:text-2xl font-bold text-primary block">±2.497</span>
-                  <p className="text-[11px] text-on-surface-variant font-medium mt-0.5">Instagram Followers</p>
+                  <p className="text-xs sm:text-sm text-slate-700 font-medium mt-1">Instagram Followers</p>
                 </div>
                 <div className="p-3 sm:p-4 bg-white border border-outline-variant/30 rounded-sm text-center">
                   <span className="font-display text-xl sm:text-2xl font-bold text-primary block">08–22</span>
-                  <p className="text-[11px] text-on-surface-variant font-medium mt-0.5">Buka Setiap Hari</p>
+                  <p className="text-xs sm:text-sm text-slate-700 font-medium mt-1">Buka Setiap Hari</p>
                 </div>
                 <div className="p-3 sm:p-4 bg-white border border-outline-variant/30 rounded-sm text-center">
                   <span className="font-display text-xl sm:text-2xl font-bold text-primary block">Ponorogo</span>
-                  <p className="text-[11px] text-on-surface-variant font-medium mt-0.5">&amp; Beyond</p>
+                  <p className="text-xs sm:text-sm text-slate-700 font-medium mt-1">&amp; Beyond</p>
                 </div>
               </div>
             </div>
@@ -85,7 +85,7 @@ export default function AboutPage() {
       <section className="bg-ivory-surface py-12 sm:py-16 md:py-20 border-t border-outline-variant/20">
         <div className="max-w-container-max mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-14">
-            <span className="font-label-md text-secondary tracking-[0.2em] uppercase text-xs mb-2 block font-semibold">
+            <span className="font-label-md text-secondary tracking-[0.2em] uppercase text-xs mb-2 block font-bold">
               Nilai &amp; Komitmen
             </span>
             <h2 className="font-display text-2xl sm:text-3xl md:text-4xl text-primary font-semibold">
@@ -93,31 +93,31 @@ export default function AboutPage() {
             </h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="bg-white p-6 border border-outline-variant/30 rounded-sm space-y-3 shadow-sm">
+            <div className="bg-white p-6 border border-outline-variant/30 rounded-sm space-y-3 shadow-sm hover:border-gold-shimmer/50 transition-colors">
               <span className="material-symbols-outlined text-gold-shimmer text-3xl">auto_awesome</span>
-              <h3 className="font-display text-base font-semibold text-primary">Keanggunan Detail</h3>
-              <p className="text-xs sm:text-sm text-on-surface-variant font-light leading-relaxed">
+              <h3 className="font-display text-base sm:text-lg font-semibold text-primary">Keanggunan Detail</h3>
+              <p className="text-xs sm:text-sm text-slate-700 font-normal leading-relaxed">
                 Menaruh perhatian saksama pada setiap elemen acara, memastikan keserasian estetika dan nuansa acara.
               </p>
             </div>
-            <div className="bg-white p-6 border border-outline-variant/30 rounded-sm space-y-3 shadow-sm">
+            <div className="bg-white p-6 border border-outline-variant/30 rounded-sm space-y-3 shadow-sm hover:border-gold-shimmer/50 transition-colors">
               <span className="material-symbols-outlined text-gold-shimmer text-3xl">self_improvement</span>
-              <h3 className="font-display text-base font-semibold text-primary">Ketenangan Klien</h3>
-              <p className="text-xs sm:text-sm text-on-surface-variant font-light leading-relaxed">
+              <h3 className="font-display text-base sm:text-lg font-semibold text-primary">Ketenangan Klien</h3>
+              <p className="text-xs sm:text-sm text-slate-700 font-normal leading-relaxed">
                 Keluarga dan pengantin dapat menikmati perayaan dengan damai tanpa perlu memikirkan kerumitan teknis di lapangan.
               </p>
             </div>
-            <div className="bg-white p-6 border border-outline-variant/30 rounded-sm space-y-3 shadow-sm">
+            <div className="bg-white p-6 border border-outline-variant/30 rounded-sm space-y-3 shadow-sm hover:border-gold-shimmer/50 transition-colors">
               <span className="material-symbols-outlined text-gold-shimmer text-3xl">timer</span>
-              <h3 className="font-display text-base font-semibold text-primary">Presisi Koordinasi</h3>
-              <p className="text-xs sm:text-sm text-on-surface-variant font-light leading-relaxed">
+              <h3 className="font-display text-base sm:text-lg font-semibold text-primary">Presisi Koordinasi</h3>
+              <p className="text-xs sm:text-sm text-slate-700 font-normal leading-relaxed">
                 Rundown terstruktur rapi dan koordinasi vendor yang harmonis untuk alur acara yang tepat waktu dan lancar.
               </p>
             </div>
-            <div className="bg-white p-6 border border-outline-variant/30 rounded-sm space-y-3 shadow-sm">
+            <div className="bg-white p-6 border border-outline-variant/30 rounded-sm space-y-3 shadow-sm hover:border-gold-shimmer/50 transition-colors">
               <span className="material-symbols-outlined text-gold-shimmer text-3xl">handshake</span>
-              <h3 className="font-display text-base font-semibold text-primary">Solusi Terpadu</h3>
-              <p className="text-xs sm:text-sm text-on-surface-variant font-light leading-relaxed">
+              <h3 className="font-display text-base sm:text-lg font-semibold text-primary">Solusi Terpadu</h3>
+              <p className="text-xs sm:text-sm text-slate-700 font-normal leading-relaxed">
                 Layanan fleksibel mencakup wedding planning, wedding day coordination, lamaran, hingga perhelatan event organizer.
               </p>
             </div>

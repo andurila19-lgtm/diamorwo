@@ -24,15 +24,15 @@ export default function PackagesPage() {
       {/* Grid of All Packages */}
       <section className="py-10 sm:py-16 md:py-20 bg-surface">
         <div className="max-w-container-max mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8 lg:gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
             {packagesData.map((pkg) => (
               <article
                 key={pkg.id}
                 className="border border-outline-variant/30 bg-surface-container-low hover:bg-white flex flex-col justify-between rounded-sm shadow-sm overflow-hidden transition-all duration-300 hover:shadow-md"
               >
-                <div className="flex sm:flex-col">
-                  {/* Side-by-side image on mobile */}
-                  <div className="w-2/5 sm:w-full aspect-[4/5] sm:aspect-[16/10] overflow-hidden bg-black/5 flex-shrink-0">
+                <div className="flex flex-col">
+                  {/* Clean full-width image on mobile and desktop */}
+                  <div className="w-full aspect-[16/10] overflow-hidden bg-black/5 flex-shrink-0">
                     <img
                       className="w-full h-full object-cover"
                       src={pkg.image}
@@ -42,40 +42,40 @@ export default function PackagesPage() {
                       height={300}
                     />
                   </div>
-                  <div className="p-3.5 sm:p-6 flex-1 flex flex-col justify-between">
+                  <div className="p-5 sm:p-6 flex-1 flex flex-col justify-between">
                     <div>
-                      <div className="flex items-center justify-between gap-1 mb-1">
-                        <h2 className="font-display text-base sm:text-2xl text-primary font-semibold leading-snug">
+                      <div className="flex items-center justify-between gap-2 mb-2">
+                        <h2 className="font-display text-lg sm:text-2xl text-primary font-semibold leading-snug">
                           {pkg.name}
                         </h2>
                         {pkg.badge && (
-                          <span className="bg-gold-shimmer text-primary text-[9px] sm:text-[10px] px-2 py-0.5 uppercase tracking-wider font-bold whitespace-nowrap rounded-sm">
+                          <span className="bg-gold-shimmer text-primary text-xs px-2.5 py-0.5 uppercase tracking-wider font-bold whitespace-nowrap rounded-sm">
                             {pkg.badge}
                           </span>
                         )}
                       </div>
-                      <p className="font-body text-[11px] sm:text-xs text-on-surface-variant mb-2 line-clamp-2 font-light">
+                      <p className="font-body text-xs sm:text-sm text-slate-700 mb-3 line-clamp-2 font-normal leading-relaxed">
                         {pkg.shortDesc}
                       </p>
 
-                      <div className="flex flex-wrap gap-1 mb-2">
-                        <span className="text-[10px] font-body px-2 py-0.5 rounded bg-black/5 text-on-surface-variant">
+                      <div className="flex flex-wrap gap-1.5 mb-3">
+                        <span className="text-xs font-body px-2.5 py-1 rounded bg-black/5 text-slate-700 font-medium">
                           {pkg.venueIncluded ? 'Termasuk Venue' : 'Non-Venue'}
                         </span>
-                        <span className="text-[10px] font-body px-2 py-0.5 rounded bg-secondary/10 text-secondary font-medium">
+                        <span className="text-xs font-body px-2.5 py-1 rounded bg-secondary/15 text-secondary font-semibold">
                           {pkg.cateringIncluded ? 'Termasuk Katering' : 'Koordinasi Vendor'}
                         </span>
                       </div>
                     </div>
 
-                    <div className="pt-2 border-t border-outline-variant/20 flex items-center justify-between">
+                    <div className="pt-3 border-t border-outline-variant/20 flex items-center justify-between">
                       <div>
-                        <span className="text-[9px] uppercase text-outline block">Penawaran</span>
-                        <p className="font-display text-xs sm:text-base text-primary font-bold">{pkg.price}</p>
+                        <span className="text-xs uppercase text-slate-500 font-medium block">Penawaran</span>
+                        <p className="font-display text-sm sm:text-base text-primary font-bold">{pkg.price}</p>
                       </div>
                       <a
                         href={`/paket/${pkg.slug}`}
-                        className="px-3.5 py-1.5 sm:px-5 sm:py-2 bg-primary text-on-primary text-[10px] sm:text-xs uppercase font-label-md rounded-sm font-semibold tracking-wider hover:bg-primary-container transition-colors"
+                        className="px-4 py-2 sm:px-5 sm:py-2 bg-primary text-on-primary text-xs uppercase font-label-md rounded-sm font-semibold tracking-wider hover:bg-primary-container transition-colors"
                       >
                         Detail
                       </a>
