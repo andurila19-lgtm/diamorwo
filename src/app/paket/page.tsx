@@ -3,31 +3,32 @@ import { packagesData } from '@/data/packages';
 import PageHeader from '@/components/PageHeader';
 
 export const metadata = {
-  title: 'Paket Pernikahan Boyolali & Solo Raya — Galipat Wedding Organizer',
-  description: 'Pilihan paket pernikahan lengkap adat Jawa & modern di Boyolali. Paket Permata, Zamrud, Mutiara, Lamaran, Siraman, dan Intimate Wedding.',
+  title: 'Paket Layanan Pernikahan & Event Ponorogo — Diamor Organizer',
+  description:
+    'Pilihan paket wedding planning, wedding day coordination, prosesi adat, intimate wedding, lamaran, dan event organizer di Ponorogo and beyond.',
 };
 
 export default function PackagesPage() {
   return (
     <main>
       <PageHeader
-        eyebrow="Katalog Eksklusif"
-        title="Paket Pernikahan Galipat"
-        description="Pilihan paket pernikahan fleksibel dan transparan untuk mewujudkan perayaan sakral keluarga Anda di Boyolali dan Solo Raya."
+        eyebrow="Katalog Layanan"
+        title="Paket &amp; Layanan Diamor"
+        description="Pilihan layanan profesional fleksibel dan transparan untuk mewujudkan perayaan sakral dan acara istimewa Anda di Ponorogo and beyond."
         breadcrumbs={[
           { label: 'Beranda', href: '/' },
-          { label: 'Paket Pernikahan' },
+          { label: 'Paket & Layanan' },
         ]}
       />
 
-      {/* Grid of All Packages - Compact on Mobile */}
+      {/* Grid of All Packages */}
       <section className="py-10 sm:py-16 md:py-20 bg-surface">
         <div className="max-w-container-max mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8 lg:gap-10">
             {packagesData.map((pkg) => (
               <article
                 key={pkg.id}
-                className="border border-outline-variant/30 bg-surface-container-low hover:bg-white flex flex-col justify-between rounded-sm shadow-sm overflow-hidden"
+                className="border border-outline-variant/30 bg-surface-container-low hover:bg-white flex flex-col justify-between rounded-sm shadow-sm overflow-hidden transition-all duration-300 hover:shadow-md"
               >
                 <div className="flex sm:flex-col">
                   {/* Side-by-side image on mobile */}
@@ -56,25 +57,25 @@ export default function PackagesPage() {
                       <p className="font-body text-[11px] sm:text-xs text-on-surface-variant mb-2 line-clamp-2 font-light">
                         {pkg.shortDesc}
                       </p>
-                      
+
                       <div className="flex flex-wrap gap-1 mb-2">
                         <span className="text-[10px] font-body px-2 py-0.5 rounded bg-black/5 text-on-surface-variant">
-                          {pkg.venueIncluded ? 'Venue ✓' : 'Non-Venue'}
+                          {pkg.venueIncluded ? 'Termasuk Venue' : 'Non-Venue'}
                         </span>
                         <span className="text-[10px] font-body px-2 py-0.5 rounded bg-secondary/10 text-secondary font-medium">
-                          {pkg.cateringIncluded ? 'Katering ✓' : 'Non-Katering'}
+                          {pkg.cateringIncluded ? 'Termasuk Katering' : 'Koordinasi Vendor'}
                         </span>
                       </div>
                     </div>
 
                     <div className="pt-2 border-t border-outline-variant/20 flex items-center justify-between">
                       <div>
-                        <span className="text-[9px] uppercase text-outline block">Mulai</span>
-                        <p className="font-display text-sm sm:text-xl text-primary font-bold">{pkg.price}</p>
+                        <span className="text-[9px] uppercase text-outline block">Penawaran</span>
+                        <p className="font-display text-xs sm:text-base text-primary font-bold">{pkg.price}</p>
                       </div>
                       <a
                         href={`/paket/${pkg.slug}`}
-                        className="px-3.5 py-1.5 sm:px-5 sm:py-2 bg-primary text-on-primary text-[10px] sm:text-xs uppercase font-label-md rounded-sm font-semibold tracking-wider hover:bg-primary-container"
+                        className="px-3.5 py-1.5 sm:px-5 sm:py-2 bg-primary text-on-primary text-[10px] sm:text-xs uppercase font-label-md rounded-sm font-semibold tracking-wider hover:bg-primary-container transition-colors"
                       >
                         Detail
                       </a>
@@ -87,25 +88,26 @@ export default function PackagesPage() {
         </div>
       </section>
 
-      {/* Custom Inquiry Section - Compact */}
+      {/* Custom Inquiry Section */}
       <section className="bg-ivory-surface py-10 sm:py-16 md:py-20 border-t border-outline-variant/30">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 text-center space-y-3 sm:space-y-4">
           <span className="font-label-md text-secondary text-[11px] sm:text-xs uppercase tracking-[0.2em] font-semibold block">
             Konsultasi Fleksibel
           </span>
           <h3 className="font-display text-xl sm:text-3xl text-primary font-semibold leading-snug">
-            Butuh Penyesuaian Anggaran &amp; Konsep Adat Khusus?
+            Butuh Penyesuaian Anggaran &amp; Konsep Acara Khusus?
           </h3>
           <p className="font-body text-xs sm:text-sm text-on-surface-variant leading-relaxed font-light">
-            Setiap keluarga memiliki tradisi unik. Tim perencana Galipat siap membuatkan simulasi paket kustom sesuai jumlah undangan Anda.
+            Setiap acara dan perayaan keluarga memiliki keunikan tersendiri. Tim Diamor Wedding &amp; Event Organizer siap merancang penawaran kustom yang tepat sesuai kebutuhan Anda di Ponorogo dan sekitarnya.
           </p>
           <div className="pt-1">
             <a
-              href="https://wa.me/6288902968424?text=Halo%20Marketing%20Galipat%20WO%2C%20saya%20ingin%20konsultasi%20paket%20custom"
+              href="https://wa.me/6282132560310?text=Halo%20Diamor%20Wedding%20%26%20Event%20Organizer%2C%20saya%20ingin%20konsultasi%20paket%20dan%20penawaran%20custom"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center min-h-[42px] sm:min-h-[46px] bg-primary hover:bg-primary-container text-on-primary px-6 sm:px-8 font-label-md text-[11px] sm:text-xs tracking-widest uppercase rounded-sm font-semibold transition-colors shadow-sm"
+              className="inline-flex items-center justify-center min-h-[42px] sm:min-h-[46px] bg-primary hover:bg-primary-container text-on-primary px-6 sm:px-8 font-label-md text-[11px] sm:text-xs tracking-widest uppercase rounded-sm font-semibold transition-colors shadow-sm gap-2"
             >
+              <span className="material-symbols-outlined text-base">chat</span>
               Konsultasi Custom via WhatsApp
             </a>
           </div>

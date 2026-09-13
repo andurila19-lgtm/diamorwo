@@ -26,7 +26,7 @@ export default function WeddingCalculatorPage() {
   };
 
   const handleConsult = () => {
-    const msg = `*SIMULASI ESTIMASI BIAYA WEDDING CALCULATOR — Galipat WO BOYOLALI*
+    const msg = `*SIMULASI ESTIMASI BIAYA WEDDING CALCULATOR — Diamor Wedding & Event Organizer Ponorogo*
 
 *Jumlah Undangan:* ${guests} Pax
 *Estimasi Katering:* ${formatRupiah(guests * cateringTier)} (@ ${formatRupiah(cateringTier)}/pax)
@@ -38,20 +38,20 @@ export default function WeddingCalculatorPage() {
 
 *TOTAL ESTIMASI:* ${formatRupiah(totalEstimate)}
 
-_Mohon informasi ketersediaan jadwal dan rekomendasi vendor terbaik Galipat._`;
+_Mohon informasi ketersediaan jadwal dan penawaran layanan Diamor Wedding & Event Organizer._`;
 
-    window.open(`https://wa.me/6288902968424?text=${encodeURIComponent(msg)}`, '_blank');
+    window.open(`https://wa.me/6282132560310?text=${encodeURIComponent(msg)}`, '_blank');
   };
 
   return (
     <main>
       <PageHeader
         eyebrow="Simulasi Biaya Transparan"
-        title="Wedding Calculator Galipat"
-        description="Hitung perkiraan kebutuhan anggaran pernikahan Anda di Boyolali &amp; Solo Raya secara transparan dan terukur."
+        title="Kalkulator Biaya Pernikahan"
+        description="Hitung perkiraan kebutuhan anggaran pernikahan dan perhelatan Anda di Ponorogo and beyond secara fleksibel dan terencana."
         breadcrumbs={[
           { label: 'Beranda', href: '/' },
-          { label: 'Wedding Calculator' },
+          { label: 'Kalkulator Biaya' },
         ]}
       />
 
@@ -143,7 +143,7 @@ _Mohon informasi ketersediaan jadwal dan rekomendasi vendor terbaik Galipat._`;
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
                   {[
                     { name: 'Modern Minimalis', price: 12000000 },
-                    { name: 'Gebyok Ukir Solo', price: 18000000 },
+                    { name: 'Gebyok Ukir Tradisional', price: 18000000 },
                     { name: 'Grand Florist Mewah', price: 30000000 },
                   ].map((d) => (
                     <button
@@ -220,7 +220,7 @@ _Mohon informasi ketersediaan jadwal dan rekomendasi vendor terbaik Galipat._`;
                     <span className="font-semibold text-white">{formatRupiah(makeupTier)}</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-white/75">WO Management (Hari-H):</span>
+                    <span className="text-white/75">WO Management:</span>
                     <span className="font-semibold text-white">{formatRupiah(woService)}</span>
                   </div>
                 </div>
@@ -234,12 +234,13 @@ _Mohon informasi ketersediaan jadwal dan rekomendasi vendor terbaik Galipat._`;
 
                 <button
                   onClick={handleConsult}
-                  className="inline-flex items-center justify-center min-h-[46px] w-full bg-gold-shimmer hover:bg-secondary hover:text-white text-primary font-label-md text-xs uppercase tracking-widest rounded-sm font-semibold transition-colors shadow-sm cursor-pointer"
+                  className="inline-flex items-center justify-center min-h-[46px] w-full bg-gold-shimmer hover:bg-secondary hover:text-white text-primary font-label-md text-xs uppercase tracking-widest rounded-sm font-semibold transition-colors shadow-sm cursor-pointer gap-2"
                 >
+                  <span className="material-symbols-outlined text-base">chat</span>
                   Konsultasikan Anggaran via WhatsApp
                 </button>
                 <p className="text-[11px] text-white/50 text-center leading-relaxed font-light">
-                  *Simulasi awal ini dapat disesuaikan kembali dengan kapasitas gedung dan pilihan vendor keluarga.
+                  *Simulasi awal ini sebagai gambaran umum dan dapat disesuaikan kembali dengan kapasitas lokasi serta pilihan kebutuhan keluarga.
                 </p>
               </div>
             </div>

@@ -3,8 +3,9 @@ import { tipsData } from '@/data/tips';
 import PageHeader from '@/components/PageHeader';
 
 export const metadata = {
-  title: 'Tips & Panduan Pernikahan — Galipat Wedding Organizer Boyolali',
-  description: 'Kumpulan tips, panduan adat Jawa, perhitungan katering, dan checklist persiapan pernikahan dari tim ahli Galipat.',
+  title: 'Tips & Panduan Pernikahan — Diamor Wedding & Event Organizer',
+  description:
+    'Kumpulan tips, panduan adat Jawa, perhitungan katering, dan checklist persiapan pernikahan dari tim profesional Diamor Ponorogo.',
 };
 
 export default function TipsPage() {
@@ -13,7 +14,7 @@ export default function TipsPage() {
       <PageHeader
         eyebrow="Inspirasi &amp; Wawasan"
         title="Tips &amp; Panduan Pernikahan"
-        description="Wawasan seputar tata krama adat Jawa, manajemen anggaran, dan panduan teknis agar persiapan hari bahagia Anda berjalan tenang."
+        description="Wawasan seputar tata krama adat, manajemen anggaran, dan panduan teknis agar persiapan hari bahagia Anda berjalan tenang."
         breadcrumbs={[
           { label: 'Beranda', href: '/' },
           { label: 'Tips & Panduan' },

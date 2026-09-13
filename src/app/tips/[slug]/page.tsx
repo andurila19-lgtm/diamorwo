@@ -12,9 +12,9 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const tip = tipsData.find((t) => t.slug === slug);
-  if (!tip) return { title: 'Artikel Tidak Ditemukan | Galipat' };
+  if (!tip) return { title: 'Artikel Tidak Ditemukan | Diamor' };
   return {
-    title: `${tip.title} — Tips Pernikahan | Galipat`,
+    title: `${tip.title} — Tips & Panduan | Diamor Organizer`,
     description: tip.excerpt,
   };
 }
@@ -65,15 +65,18 @@ export default async function TipDetailPage({ params }: { params: Promise<{ slug
               Ingin Berkonsultasi Seputar Konsep Acara Anda?
             </h3>
             <p className="text-xs sm:text-sm text-on-surface-variant font-light max-w-xl mx-auto leading-relaxed">
-              Tim kurator Galipat siap mendampingi Anda memilih adat yang tepat, menghitung porsi katering, dan menyusun rundown hari-H.
+              Tim Diamor Wedding &amp; Event Organizer siap mendampingi Anda memilih adat yang tepat, menghitung porsi katering, dan menyusun rundown hari-H di Ponorogo and beyond.
             </p>
             <div className="pt-2">
               <a
-                href="https://wa.me/6288902968424?text=Halo%20Marketing%20Galipat%20WO%2C%20saya%20ingin%20konsultasi%20pernikahan"
+                href={`https://wa.me/6282132560310?text=${encodeURIComponent(
+                  `Halo Diamor Wedding & Event Organizer, saya telah membaca artikel "${tip.title}" dan ingin berkonsultasi seputar persiapan acara saya`
+                )}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center min-h-[44px] bg-primary hover:bg-primary-container text-on-primary px-8 font-label-md uppercase tracking-widest text-xs rounded-sm font-semibold transition-colors shadow-sm"
+                className="inline-flex items-center justify-center min-h-[44px] bg-primary hover:bg-primary-container text-on-primary px-8 font-label-md uppercase tracking-widest text-xs rounded-sm font-semibold transition-colors shadow-sm gap-2"
               >
+                <span className="material-symbols-outlined text-base">chat</span>
                 Konsultasi WhatsApp Sekarang
               </a>
             </div>

@@ -17,9 +17,9 @@ export default function GalleryPage() {
   return (
     <main>
       <PageHeader
-        eyebrow="Rekam Jejak Karya"
-        title="Galeri Inspirasi Galipat"
-        description="Dokumentasi perayaan pernikahan nyata yang diorkestrasi dengan penuh cinta dan ketenangan di Boyolali &amp; Solo Raya."
+        eyebrow="Inspirasi &amp; Portofolio"
+        title="Galeri Inspirasi Diamor"
+        description="Dokumentasi visual dan ragam inspirasi tata rias, busana, prosesi adat, serta dekorasi perhelatan pernikahan dan acara istimewa di Ponorogo and beyond."
         breadcrumbs={[
           { label: 'Beranda', href: '/' },
           { label: 'Galeri Inspirasi' },
@@ -88,7 +88,7 @@ export default function GalleryPage() {
               />
               <button
                 onClick={() => setActiveLightbox(null)}
-                className="absolute top-4 right-4 bg-black/70 text-white rounded-full p-2 hover:bg-black transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center"
+                className="absolute top-4 right-4 bg-black/70 text-white rounded-full p-2 hover:bg-black transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center cursor-pointer"
                 aria-label="Tutup Pratinjau"
               >
                 <span className="material-symbols-outlined text-xl">close</span>
@@ -102,13 +102,14 @@ export default function GalleryPage() {
                   <p className="text-xs sm:text-sm text-on-surface-variant font-light">{activeLightbox.venue}</p>
                 </div>
                 <a
-                  href={`https://wa.me/6288902968424?text=${encodeURIComponent(
-                    `Halo Marketing Galipat WO, saya tertarik dengan konsep pernikahan ${activeLightbox.couple} di ${activeLightbox.venue}`
+                  href={`https://wa.me/6282132560310?text=${encodeURIComponent(
+                    `Halo Diamor Wedding & Event Organizer, saya tertarik dengan inspirasi ${activeLightbox.couple} (${activeLightbox.category})`
                   )}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center min-h-[44px] bg-primary text-on-primary px-6 py-2.5 font-label-md text-xs uppercase tracking-widest rounded-sm font-semibold hover:bg-primary-container transition-colors"
+                  className="inline-flex items-center justify-center min-h-[44px] bg-primary text-on-primary px-6 py-2.5 font-label-md text-xs uppercase tracking-widest rounded-sm font-semibold hover:bg-primary-container transition-colors gap-2"
                 >
+                  <span className="material-symbols-outlined text-base">chat</span>
                   Tanya Konsep Ini
                 </a>
               </div>

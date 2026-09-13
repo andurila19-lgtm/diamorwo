@@ -10,66 +10,66 @@ export interface GalleryItem {
 export const galleryData: GalleryItem[] = [
   {
     id: 'g1',
-    title: 'Pawiwahan Ageng Solo Basahan',
+    title: 'Pawiwahan Ageng Adat Tradisional',
     category: 'Adat Jawa',
-    venue: 'Ndalem Ageng Boyolali',
-    couple: 'Gendhis & Raden Arya',
+    venue: 'Ponorogo and Beyond',
+    couple: 'Inspirasi Adat Tradisional',
     image: '/images/hero-portrait.png'
   },
   {
     id: 'g2',
-    title: 'Grand Ballroom Reception',
+    title: 'Grand Ballroom Elegance Reception',
     category: 'Modern Ballroom',
-    venue: 'The Heritage Convention Hall',
-    couple: 'Anindya & Bagas Prasetyo',
+    venue: 'Ballroom Ponorogo & Sekitarnya',
+    couple: 'Inspirasi Modern Elegance',
     image: '/images/ballroom-candid.png'
   },
   {
     id: 'g3',
-    title: 'Intimate Pendopo Joglo Wedding',
+    title: 'Intimate Pendopo & Garden Wedding',
     category: 'Intimate Joglo',
-    venue: 'Pendopo Siswodipuran Boyolali',
-    couple: 'Sekar & Pradana',
+    venue: 'Pendopo & Garden Venue',
+    couple: 'Inspirasi Intimate Event',
     image: '/images/joglo-pendopo.jpg'
   },
   {
     id: 'g4',
-    title: 'Upacara Siraman Bunga Setaman',
+    title: 'Upacara Siraman & Sungkeman',
     category: 'Detail & Ritual',
-    venue: 'Kediaman Keluarga Selo',
-    couple: 'Prosesi Siraman Mempelai',
+    venue: 'Kediaman Mempelai',
+    couple: 'Prosesi Adat Penuh Khidmat',
     image: '/images/siraman-ceremony.png'
   },
   {
     id: 'g5',
-    title: 'Uba Rampe Mahkota Cunduk Mentul',
+    title: 'Detail Uba Rampe & Sentuhan Kemewahan',
     category: 'Detail & Ritual',
-    venue: 'Galipat Heritage Gallery',
-    couple: 'Koleksi Perhiasan Sepuh Emas',
+    venue: 'Diamor Portfolio Gallery',
+    couple: 'Elegance in Every Detail',
     image: '/images/wedding-artifacts.jpg'
   },
   {
     id: 'g6',
-    title: 'Tim Galipat Wedding Organizer',
+    title: 'Tim Lapangan Diamor Organizer',
     category: 'Adat Jawa',
-    venue: 'Grand Pelaminan Boyolali',
-    couple: 'Galipat Professional Crew',
+    venue: 'Venue Acara Ponorogo',
+    couple: 'Dedikasi Tim Profesional',
     image: '/images/mantu-team-hero.jpg'
   },
   {
     id: 'g7',
-    title: 'Resepsi Hangat & Penuh Tawa',
+    title: 'Resepsi Hangat & Penuh Kebahagiaan',
     category: 'Modern Ballroom',
-    venue: 'Boyolali Town Hall',
-    couple: 'Anggito & Wulan',
+    venue: 'Convention Hall Ponorogo',
+    couple: 'Momen Berkesan & Hangat',
     image: '/images/ballroom-candid.png'
   },
   {
     id: 'g8',
-    title: 'Pernikahan Klasik Lereng Merbabu',
+    title: 'Nuansa Asri & Khidmat',
     category: 'Intimate Joglo',
-    venue: 'Villa Pendopo Selo Boyolali',
-    couple: 'dr. Rarasati & Dimas',
+    venue: 'Venue Terpilih Jawa Timur',
+    couple: 'Inspirasi Perayaan Khidmat',
     image: '/images/joglo-pendopo.jpg'
   }
 ];

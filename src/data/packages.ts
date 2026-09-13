@@ -4,7 +4,7 @@ export interface PackageItem {
   name: string;
   badge?: string;
   price: string;
-  priceRaw: number;
+  priceRaw?: number;
   shortDesc: string;
   longDesc: string;
   image: string;
@@ -16,138 +16,125 @@ export interface PackageItem {
 
 export const packagesData: PackageItem[] = [
   {
-    id: 'permata',
-    slug: 'paket-permata',
-    name: 'Paket Permata',
-    price: 'Mulai Rp 51.500.000',
-    priceRaw: 51500000,
-    shortDesc: 'Paket populer dengan benefit lengkap untuk acara modern dan adat Jawa terorganisir.',
-    longDesc: 'Paket Permata dirancang khusus bagi calon pengantin yang mendambakan kepraktisan dan kesempurnaan koordinasi hari-H. Kami memastikan seluruh alur acara berjalan presisi, santun, dan menenangkan kedua keluarga besar.',
+    id: 'wedding-day',
+    slug: 'wedding-day-coordination',
+    name: 'Wedding Day Coordination',
+    badge: 'Paling Populer',
+    price: 'Konsultasi Penawaran',
+    shortDesc: 'Pendampingan intensif hari-H untuk memastikan seluruh susunan acara berjalan tertib, khidmat, dan tanpa rasa cemas.',
+    longDesc: 'Layanan koordinasi profesional hari-H untuk calon pengantin yang telah menyiapkan vendor sendiri namun membutuhkan tim ahli untuk mengorkestrasi jalannya acara. Tim Diamor memastikan master rundown berjalan tepat waktu, vendor tersinkronisasi, dan keluarga dapat menikmati hari bahagia dengan tenang.',
+    image: '/images/ballroom-candid.png',
+    venueIncluded: false,
+    cateringIncluded: false,
+    features: [
+      'Penyusunan Master Rundown menit per menit & Technical Meeting Final',
+      'Tim Lapangan Profesional Diamor Organizer & Radio Komunikasi',
+      'Personal Assistant khusus untuk mendampingi calon pengantin',
+      'Koordinasi terpadu seluruh vendor (katering, dekorasi, dokumentasi, MC, MUA)',
+      'Pengawalan protokol akad nikah, temu panggih/prosesi adat, & resepsi',
+      'Manajemen alur tamu, VIP, dan penyerahan souvenir'
+    ],
+    tiers: [
+      { name: 'Intimate Scale', pax: 'Hingga 300 Tamu', price: 'Konsultasi Tim' },
+      { name: 'Medium Scale', pax: '300 - 800 Tamu', price: 'Konsultasi Tim' },
+      { name: 'Grand Scale', pax: '800+ Tamu', price: 'Konsultasi Tim' }
+    ]
+  },
+  {
+    id: 'full-planning',
+    slug: 'full-wedding-planning',
+    name: 'Full Wedding Planning & Organizing',
+    badge: 'All-In Planning',
+    price: 'Konsultasi Penawaran',
+    shortDesc: 'Pendampingan menyeluruh dari tahap konsep awal, kurasi vendor, penyusunan anggaran, hingga eksekusi sempurna hari-H.',
+    longDesc: 'Solusi lengkap bagi calon mempelai dan keluarga yang menginginkan proses persiapan pernikahan tanpa stres. Dimulai dari perancangan moodboard tematik, penyesuaian anggaran, negosiasi dan pendampingan vendor, gladi resik, hingga pengawalan hari-H dengan standar keanggunan tinggi khas Diamor.',
+    image: '/images/hero-portrait.png',
+    venueIncluded: false,
+    cateringIncluded: false,
+    features: [
+      'Konsultasi intensif konsep pernikahan (Modern, Tradisional, atau Perpaduan)',
+      'Penyusunan simulasi anggaran transparan sesuai preferensi keluarga',
+      'Pendampingan pemilihan dan komunikasi vendor terpercaya',
+      'Penyusunan timeline berkala & reminder tahapan persiapan',
+      'Pendampingan fitting busana pengantin & food tasting',
+      'Gladi resik prosesi akad nikah dan resepsi',
+      'Pengawalan penuh hari-H oleh tim Diamor Organizer'
+    ],
+    tiers: [
+      { name: 'Exclusive Tier', pax: 'Skala Fleksibel', price: 'Hubungi Kami' },
+      { name: 'Prestige Tier', pax: 'Skala Menengah - Besar', price: 'Hubungi Kami' },
+      { name: 'Royal Tier', pax: 'Skala Akbar / Multi-Hari', price: 'Hubungi Kami' }
+    ]
+  },
+  {
+    id: 'intimate-wedding',
+    slug: 'intimate-wedding',
+    name: 'Intimate Wedding Ceremony',
+    price: 'Konsultasi Penawaran',
+    shortDesc: 'Perayaan pernikahan hangat, intim, dan personal untuk keluarga serta sahabat terdekat dalam suasana khidmat.',
+    longDesc: 'Dikhususkan bagi pasangan yang mendambakan momen pernikahan yang hangat, mendalam, dan bermakna bersama lingkaran terdekat. Tim Diamor mengemas setiap detail estetika dan alur acara agar setiap interaksi terasa berkesan, elegan, dan penuh rasa syukur.',
+    image: '/images/joglo-pendopo.jpg',
+    venueIncluded: false,
+    cateringIncluded: false,
+    features: [
+      'Konsep acara intimate yang hangat dan interaktif',
+      'Penyusunan susunan acara khusus keluarga & kerabat dekat',
+      'Koordinasi sound, pencahayaan, dan tata tempat duduk tamu',
+      'Tim WO siaga mendampingi seluruh prosesi',
+      'Pengawalan momen foto bersama dan jamuan santai'
+    ]
+  },
+  {
+    id: 'prosesi-adat',
+    slug: 'prosesi-adat-siraman',
+    name: 'Paket Prosesi Adat & Siraman',
+    price: 'Konsultasi Penawaran',
+    shortDesc: 'Pengawalan upacara tradisi siraman, midodareni, dan sungkeman dengan tata krama adat Jawa yang luhur.',
+    longDesc: 'Rangkaian upacara penyucian dan permohonan restu orang tua dalam tradisi luhur Jawa. Tim Diamor siap mengoordinasikan kelengkapan uba rampe, pemandu adat, pranatacara, dan jalannya prosesi agar memancarkan aura sakral nan menyentuh kalbu.',
     image: '/images/siraman-ceremony.png',
     venueIncluded: false,
     cateringIncluded: false,
     features: [
-      'Master Rundown Menit ke Menit & Technical Meeting H-30',
-      '10 Kru Lapangan Berseragam Khusus & Radio Komunikasi',
-      'Penyusunan Moodboard Visual & Palet Warna Tematik',
-      'Pendampingan Fitting Busana & Gladi Resik Lengkap',
-      'Koordinasi Seluruh Vendor (Katering, Dekorasi, Dokumentasi, MC)',
-      'Pengawalan Protokol Akad Nikah & Resepsi'
-    ],
-    tiers: [
-      { name: 'Tier 1 - Silver', pax: 'Hingga 400 Tamu', price: 'Rp 51.500.000' },
-      { name: 'Tier 2 - Gold', pax: '400 - 800 Tamu', price: 'Rp 58.000.000' },
-      { name: 'Tier 3 - Platinum', pax: '800 - 1.200 Tamu', price: 'Rp 65.000.000' }
+      'Koordinasi tata laksana upacara siraman, sungkeman, atau midodareni',
+      'Penyusunan urutan doa dan prosesi bersama pranata adat / sesepuh',
+      'Pemanduan keluarga inti dan para sesepuh yang memberi restu',
+      'Dokumentasi prosesi sakral yang tertata rapi tanpa kepanikan'
     ]
   },
   {
-    id: 'zamrud',
-    slug: 'paket-zamrud',
-    name: 'Paket Zamrud',
-    badge: 'Terpopuler',
-    price: 'Mulai Rp 76.750.000',
-    priceRaw: 76750000,
-    shortDesc: 'Pilihan premium dengan layanan lengkap, tersedia 3 tier. Catering lezat sudah termasuk dalam harga.',
-    longDesc: 'Paket Zamrud merupakan pilihan terfavorit di Boyolali dan Solo Raya. Menggabungkan pengawalan wedding organizer profesional dengan paket hidangan katering istimewa nusantara/tradisional yang dijamin memuaskan selera seluruh tamu undangan.',
-    image: '/images/ballroom-candid.png',
-    venueIncluded: false,
-    cateringIncluded: true,
-    features: [
-      'Catering Prasmanan & Aneka Gubukan 500 Pax Pilihan',
-      'Dekorasi Pelaminan Gebyok Ukir / Modern Elegan Eksklusif',
-      '12 Kru WO Profesional & Personal Bride Assistant Khusus',
-      'Master Rundown & Technical Meeting Menyeluruh',
-      'Rias & Tata Busana Pengantin Lengkap dengan Paes Ageng/Solo Basahan',
-      'Dokumentasi Foto & Cinematic Video Highlight',
-      'Sound System, Lighting Panggung, & MC Protokol'
-    ],
-    tiers: [
-      { name: 'Tier 1 - Emerald 500', pax: '500 Pax Catering', price: 'Rp 76.750.000' },
-      { name: 'Tier 2 - Emerald 800', pax: '800 Pax Catering', price: 'Rp 92.500.000' },
-      { name: 'Tier 3 - Emerald 1000', pax: '1.000 Pax Catering', price: 'Rp 108.000.000' }
-    ]
-  },
-  {
-    id: 'mutiara',
-    slug: 'paket-mutiara',
-    name: 'Paket Mutiara',
-    price: 'Mulai Rp 93.000.000',
-    priceRaw: 93000000,
-    shortDesc: 'Paket all-in dengan pilihan venue indoor/outdoor, tersedia 3 tier. Venue dan catering sudah termasuk.',
-    longDesc: 'Paket Mutiara adalah solusi all-in tanpa beban. Termasuk venue ballroom ternama atau pendopo joglo prestisius di Boyolali & Solo Raya, katering berlimpah, dekorasi tematik mewah, dan tim Galipat yang menjaga setiap detik perayaan keluarga Anda.',
-    image: '/images/joglo-pendopo.jpg',
-    venueIncluded: true,
-    cateringIncluded: true,
-    features: [
-      'Venue Pilihan (Ballroom Hotel / Pendopo Ageng Siswodipuran)',
-      'Catering Lengkap 600 - 1.000 Pax dengan 5 Macam Gubukan',
-      'Dekorasi Mewah Full Florist, Gate Masuk, & Photo Booth',
-      '15 Kru WO Lengkap Berseragam Resmi',
-      'Gamelan Live Sakral / Band Akustik Entertainment',
-      'Dokumentasi Foto, Cinematic Video Drone, & Album Cetak Mewah',
-      'Perijinan, Protokol Tamu VVIP, & Keamanan Terpadu'
-    ],
-    tiers: [
-      { name: 'Tier 1 - Pearl Ballroom 600', pax: 'Venue + 600 Pax', price: 'Rp 93.000.000' },
-      { name: 'Tier 2 - Pearl Grand 800', pax: 'Venue + 800 Pax', price: 'Rp 115.000.000' },
-      { name: 'Tier 3 - Royal Mutiara 1000', pax: 'Venue + 1.000 Pax', price: 'Rp 138.000.000' }
-    ]
-  },
-  {
-    id: 'lamaran',
-    slug: 'paket-lamaran',
-    name: 'Paket Lamaran',
-    price: 'Rp 28.000.000',
-    priceRaw: 28000000,
-    shortDesc: 'Pendampingan acara lamaran agar rapi, hangat, dan berkesan bagi kedua keluarga besar.',
-    longDesc: 'Momen awal pertemuan dua keluarga disiapkan dengan khidmat dan tertata santun. Mulai dari penataan seserahan, dekorasi backdrop bunga segar, susunan acara pasrah panampi, hingga dokumentasi momen manis.',
+    id: 'lamaran-engagement',
+    slug: 'lamaran-engagement',
+    name: 'Lamaran & Engagement Organizer',
+    price: 'Konsultasi Penawaran',
+    shortDesc: 'Pengorganisasian acara lamaran dan seserahan yang tertata rapi, hangat, dan berkesan bagi kedua keluarga besar.',
+    longDesc: 'Pertemuan resmi awal antara dua keluarga besar disiapkan dengan santun dan berbobot. Mulai dari penataan seserahan, rundown pasrah panampi, sambutan perwakilan keluarga, hingga prosesi penyematan cincin.',
     image: '/images/wedding-artifacts.jpg',
     venueIncluded: false,
     cateringIncluded: false,
     features: [
-      'Dekorasi Backdrop Lamaran Estetik & Bunga Segar',
-      'Sound System & MC Profesional Khusus Acara Lamaran',
-      '4 Kru WO Pengatur Jalannya Pertemuan Keluarga',
-      'Penataan Baki Seserahan & Kotak Mahar',
-      'Dokumentasi Foto Acara & Teaser Video Singkat'
+      'Master rundown acara lamaran & panduan sambutan keluarga',
+      'Pemanduan susunan prosesi pasrah panampi dan tukar cincin',
+      'Pengaturan display seserahan dan hantaran keluarga',
+      'Tim koordinator lapangan agar acara berlangsung tepat waktu'
     ]
   },
   {
-    id: 'siraman',
-    slug: 'paket-siraman',
-    name: 'Paket Siraman & Midodareni',
-    price: 'Rp 28.500.000',
-    priceRaw: 28500000,
-    shortDesc: 'Rangkaian prosesi adat siraman dengan sentuhan modern dan uba rampe lengkap.',
-    longDesc: 'Upacara penyucian lahir batin calon pengantin dalam tradisi luhur Jawa. Kami menyediakan seluruh perlengkapan sesaji, kendi kuningan, ronce melati wangi, dan pemandu adat bersertifikasi yang mengarahkan prosesi dengan sakral.',
-    image: '/images/siraman-ceremony.png',
+    id: 'event-organizer',
+    slug: 'event-organizer-services',
+    name: 'Event Organizer (Corporate & Private Event)',
+    badge: 'Event Service',
+    price: 'Konsultasi Penawaran',
+    shortDesc: 'Layanan manajemen acara profesional untuk gathering, perayaan anniversary, seminar, atau private party di Ponorogo and beyond.',
+    longDesc: 'Selain pernikahan, Diamor berpengalaman mengelola beragam acara spesial dengan presisi tinggi. Dari temu kangen, acara korporat, pesta ulang tahun/anniversary keluarga, hingga peresmian usaha, kami hadir memastikan setiap detik acara berjalan tertata dan berkelas.',
+    image: '/images/mantu-team-hero.jpg',
     venueIncluded: false,
     cateringIncluded: false,
     features: [
-      'Pemandu Upacara Adat Jawa Senior & Pranatacara',
-      'Uba Rampe Lengkap (Gentong Kuningan, Ronce Melati, Air 7 Sumber Bunga)',
-      'Dekorasi Area Siraman Estetik & Panggung Duduk',
-      'Dokumentasi Khidmat Foto & Video Tradisi',
-      'Penyusunan Jadwal & Pendampingan Sungkeman Orang Tua'
-    ]
-  },
-  {
-    id: 'intimate',
-    slug: 'paket-intimate',
-    name: 'Paket Intimate Joglo',
-    price: 'Rp 65.000.000',
-    priceRaw: 65000000,
-    shortDesc: 'Konsep intimate wedding yang hangat untuk tamu terbatas (catering 300 pax termasuk).',
-    longDesc: 'Dikhususkan bagi pasangan yang menginginkan perayaan akrab bersama keluarga dan sahabat terdekat dalam nuansa pendopo joglo klasik Boyolali yang tenteram.',
-    image: '/images/hero-portrait.png',
-    venueIncluded: false,
-    cateringIncluded: true,
-    features: [
-      'Catering Pilihan Lezat untuk 300 Pax Undangan',
-      'Dekorasi Intimate Estetik Modern / Rustic Joglo',
-      '8 Kru WO Siaga Penuh',
-      'MC Protokol & Hiburan Musik Akustik',
-      'Dokumentasi Lengkap Album Kolase & Video Highlight'
+      'Penyusunan alur konsep dan tema acara kreatif',
+      'Manajemen panggung, susunan pengisi acara, dan MC profesional',
+      'Koordinasi teknis perlengkapan sound system, multimedia, & lighting',
+      'Tim pelaksana lapangan yang sigap dan responsif',
+      'Pengelolaan registrasi dan kenyamanan para tamu undangan'
     ]
   }
 ];

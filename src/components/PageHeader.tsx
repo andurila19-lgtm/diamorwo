@@ -16,7 +16,8 @@ export default function PageHeader({
   action,
 }: PageHeaderProps) {
   return (
-    <section className="bg-primary text-on-primary pt-28 pb-12 sm:pt-32 sm:pb-16 md:pt-36 md:pb-20 border-b border-[#005243]">
+    <section className="bg-primary text-on-primary pt-28 pb-12 sm:pt-32 sm:pb-16 md:pt-36 md:pb-20 border-b border-white/10 relative overflow-hidden">
+      <div className="absolute top-0 right-0 w-96 h-96 bg-gold-shimmer/5 rounded-full blur-3xl pointer-events-none -mr-20 -mt-20" />
       <div className="max-w-container-max mx-auto px-4 sm:px-6 lg:px-8">
         {/* Optional Breadcrumbs */}
         {breadcrumbs && breadcrumbs.length > 0 && (

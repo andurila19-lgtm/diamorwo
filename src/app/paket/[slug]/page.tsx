@@ -12,9 +12,9 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const pkg = packagesData.find((p) => p.slug === slug);
-  if (!pkg) return { title: 'Paket Tidak Ditemukan | Galipat' };
+  if (!pkg) return { title: 'Layanan Tidak Ditemukan | Diamor Organizer' };
   return {
-    title: `${pkg.name} — Paket Pernikahan Boyolali | Galipat`,
+    title: `${pkg.name} — Layanan Ponorogo | Diamor Organizer`,
     description: pkg.shortDesc,
   };
 }
@@ -30,18 +30,18 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
   return (
     <main>
       <PageHeader
-        eyebrow="Rincian Paket Pernikahan"
+        eyebrow="Rincian Layanan"
         title={pkg.name}
         description={pkg.shortDesc}
         breadcrumbs={[
           { label: 'Beranda', href: '/' },
-          { label: 'Paket Pernikahan', href: '/paket' },
+          { label: 'Paket & Layanan', href: '/paket' },
           { label: pkg.name },
         ]}
         action={
           <div className="bg-white/10 border border-white/20 p-4 sm:p-5 rounded-sm text-right">
-            <span className="text-[11px] text-white/70 uppercase tracking-widest block font-medium">Investasi Mulai</span>
-            <span className="font-display text-2xl sm:text-3xl text-gold-shimmer font-bold block">{pkg.price}</span>
+            <span className="text-[11px] text-white/70 uppercase tracking-widest block font-medium">Penawaran Biaya</span>
+            <span className="font-display text-lg sm:text-2xl text-gold-shimmer font-bold block">{pkg.price}</span>
           </div>
         }
       />
@@ -76,7 +76,7 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
               {pkg.tiers && (
                 <div className="bg-ivory-surface p-6 sm:p-8 border border-outline-variant/30 rounded-sm space-y-5">
                   <h3 className="font-display text-lg sm:text-xl text-primary font-semibold">
-                    Pilihan Skala Undangan (Tier)
+                    Pilihan Skala &amp; Cakupan Layanan
                   </h3>
                   <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                     {pkg.tiers.map((t) => (
@@ -96,10 +96,10 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
               <div className="bg-white p-6 sm:p-8 border-2 border-gold-shimmer/50 shadow-md rounded-sm space-y-6">
                 <div>
                   <span className="font-label-md text-secondary text-xs uppercase tracking-[0.2em] font-semibold block mb-1">
-                    Kelengkapan Fasilitas
+                    Cakupan Layanan
                   </span>
                   <h3 className="font-display text-xl sm:text-2xl text-primary font-semibold">
-                    Termasuk Dalam Paket Ini
+                    Termasuk Dalam Layanan Ini
                   </h3>
                 </div>
 
@@ -116,37 +116,37 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
 
                 <div className="pt-6 border-t border-outline-variant/20 space-y-3">
                   <a
-                    href={`https://wa.me/6288902968424?text=${encodeURIComponent(
-                      `Halo Marketing Galipat WO, saya tertarik dan ingin konsultasi lebih lanjut mengenai ${pkg.name} (${pkg.price})`
+                    href={`https://wa.me/6282132560310?text=${encodeURIComponent(
+                      `Halo Diamor Wedding & Event Organizer, saya tertarik dan ingin konsultasi mengenai ${pkg.name}`
                     )}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-center gap-2 w-full min-h-[46px] px-6 bg-primary hover:bg-primary-container text-on-primary font-label-md text-xs uppercase tracking-widest rounded-sm font-semibold transition-colors shadow-sm"
                   >
                     <span className="material-symbols-outlined text-lg">chat</span>
-                    Konsultasi via WhatsApp
+                    Konsultasi via WhatsApp (0821-3256-0310)
                   </a>
 
                   <a
-                    href={`https://wa.me/6288902968424?text=${encodeURIComponent(
-                      `Halo Marketing Galipat WO, saya ingin konsultasi penyesuaian budget khusus untuk ${pkg.name}`
+                    href={`https://wa.me/6283142141017?text=${encodeURIComponent(
+                      `Halo Diamor Wedding & Event Organizer, saya ingin konsultasi penyesuaian konsep dan penawaran untuk ${pkg.name}`
                     )}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-center min-h-[44px] w-full border border-primary text-primary hover:bg-primary hover:text-white font-label-md text-xs uppercase tracking-widest rounded-sm font-semibold transition-colors"
                   >
-                    Konsultasi Penyesuaian Budget
+                    WhatsApp Alternatif (0831-4214-1017)
                   </a>
                 </div>
               </div>
 
               <div className="bg-surface-container-low p-6 border border-outline-variant/30 text-center space-y-3 rounded-sm">
                 <span className="material-symbols-outlined text-primary text-3xl">support_agent</span>
-                <h4 className="font-display text-base text-primary font-semibold">Konsultasi Tatap Muka</h4>
+                <h4 className="font-display text-base text-primary font-semibold">Konsultasi Langsung</h4>
                 <p className="text-xs text-on-surface-variant leading-relaxed font-light">
-                  Tim kurator Galipat siap menyambut Anda dan keluarga di kantor Boyolali untuk diskusi langsung dan bedah moodboard.
+                  Tim Diamor Wedding &amp; Event Organizer siap berdiskusi langsung mengenai konsep, jadwal, dan koordinasi acara Anda di Ponorogo and beyond.
                 </p>
-                <p className="font-semibold text-xs text-primary">0889-0296-8424</p>
+                <p className="font-semibold text-xs text-primary">0821-3256-0310 • 0831-4214-1017</p>
               </div>
             </div>
 

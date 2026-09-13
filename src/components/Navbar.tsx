@@ -10,7 +10,7 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 25) {
+      if (window.scrollY > 20) {
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -28,12 +28,11 @@ export default function Navbar() {
 
   const navLinks = [
     { name: 'Beranda', href: '/' },
-    { name: 'Paket', href: '/paket' },
-    { name: 'Wedding Show', href: '/wedding-show' },
-    { name: 'Test Food', href: '/test-food' },
-    { name: 'Galeri', href: '/galeri' },
-    { name: 'Tips', href: '/tips' },
-    { name: 'Tentang', href: '/tentang' },
+    { name: 'Paket & Layanan', href: '/paket' },
+    { name: 'Kalkulator Biaya', href: '/wedding-calculator' },
+    { name: 'Galeri Inspirasi', href: '/galeri' },
+    { name: 'Tips & Panduan', href: '/tips' },
+    { name: 'Tentang Kami', href: '/tentang' },
   ];
 
   return (
@@ -42,48 +41,40 @@ export default function Navbar() {
       <nav
         id="desktopNav"
         aria-label="Navigasi Desktop"
-        className={`hidden lg:block w-full transition-all duration-300 ${
+        className={`hidden lg:block w-full transition-all duration-300 border-b shadow-md ${
           scrolled
-            ? 'bg-[#162035]/95 backdrop-blur-md border-b border-white/10 shadow-lg py-3'
-            : 'bg-transparent border-b border-white/15 py-4'
+            ? 'bg-[#001438]/98 backdrop-blur-md border-[#efcf58]/30 py-2.5 shadow-xl'
+            : 'bg-[#001438]/90 backdrop-blur-md border-[#efcf58]/20 py-3.5'
         }`}
       >
-        <div className="max-w-container-max mx-auto px-6 lg:px-8 flex justify-between items-center">
-          {/* Brand Logo */}
+        <div className="max-w-[1400px] mx-auto px-6 lg:px-8 flex justify-between items-center">
+          {/* Brand Logo - Official Diamor Lockup with Guaranteed Margin */}
           <a
             href="/"
-            className="flex items-center gap-3 py-0.5 focus:outline-none rounded group"
-            aria-label="Galipat Wedding Organizer - Beranda"
+            className="flex items-center flex-shrink-0 mr-8 xl:mr-12 focus:outline-none group"
+            aria-label="Diamor Wedding & Event Organizer Ponorogo - Beranda"
           >
             <img
-              src="/images/logo.png"
-              alt="Galipat Wedding Organizer"
-              className="h-10 xl:h-11 w-10 xl:w-11 rounded-full object-cover shadow-md border border-white/20 group-hover:scale-105 transition-all"
-              width={44}
-              height={44}
+              src="/images/diamor-navbar-logo.png"
+              alt="Diamor Wedding & Event Organizer"
+              className="h-9 xl:h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-105 drop-shadow-[0_2px_8px_rgba(0,0,0,0.4)]"
+              width={186}
+              height={42}
             />
-            <div className="flex flex-col text-left">
-              <span className="font-display text-lg xl:text-xl font-bold tracking-wider text-white group-hover:text-gold-shimmer transition-colors leading-tight">
-                GALIPAT
-              </span>
-              <span className="font-label-md text-[9px] tracking-[0.22em] text-gold-shimmer uppercase font-semibold">
-                WEDDING ORGANIZER
-              </span>
-            </div>
           </a>
 
           {/* Desktop Navigation Links */}
-          <div className="flex items-center gap-6 xl:gap-8">
+          <div className="flex items-center gap-3.5 xl:gap-6 flex-shrink-0">
             {navLinks.map((link) => {
               const isActive = pathname === link.href;
               return (
                 <a
                   key={link.name}
                   href={link.href}
-                  className={`font-body text-sm tracking-wide transition-all py-1 drop-shadow-[0_1px_2px_rgba(0,0,0,0.5)] ${
+                  className={`font-body text-[12px] xl:text-[13px] tracking-wider uppercase transition-all py-1.5 whitespace-nowrap font-medium ${
                     isActive
-                      ? 'text-gold-shimmer font-semibold border-b-2 border-gold-shimmer'
-                      : 'text-white/90 hover:text-gold-shimmer font-normal'
+                      ? 'text-gold-shimmer font-bold border-b-2 border-gold-shimmer'
+                      : 'text-white/85 hover:text-gold-shimmer'
                   }`}
                 >
                   {link.name}
@@ -91,10 +82,10 @@ export default function Navbar() {
               );
             })}
             <a
-              href="https://wa.me/6288902968424?text=Halo%20Galipat%20Wedding%20Organizer%20Boyolali%2C%20saya%20ingin%20konsultasi%20paket%20pernikahan"
+              href="https://wa.me/6282132560310?text=Halo%20Diamor%20Wedding%20%26%20Event%20Organizer%20Ponorogo%2C%20saya%20ingin%20konsultasi%20acara"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center min-h-[42px] px-6 bg-gold-shimmer hover:bg-secondary hover:text-white text-primary font-label-md text-xs tracking-widest uppercase transition-colors rounded-sm font-semibold shadow-md"
+              className="inline-flex items-center justify-center min-h-[40px] px-5 xl:px-6 bg-gold-shimmer hover:bg-secondary text-[#002268] hover:text-white font-label-md text-xs tracking-widest uppercase transition-colors rounded-sm font-bold shadow-md ml-2 xl:ml-4 whitespace-nowrap flex-shrink-0"
             >
               KONSULTASI
             </a>
@@ -106,40 +97,32 @@ export default function Navbar() {
       <div className="lg:hidden px-3 pt-2">
         <nav
           id="mobileNav"
-          className="bg-[#0f172a]/95 backdrop-blur-md border border-white/15 px-3.5 py-2 rounded-full flex items-center justify-between shadow-lg"
+          className="bg-[#001438]/95 backdrop-blur-md border border-[#efcf58]/25 px-3.5 py-2 rounded-full flex items-center justify-between shadow-lg"
           aria-label="Navigasi Utama Mobile"
         >
           {/* Logo Mobile */}
-          <a href="/" className="flex items-center gap-2" aria-label="Galipat Wedding Organizer Boyolali">
+          <a href="/" className="flex items-center gap-2" aria-label="Diamor Wedding & Event Organizer Ponorogo">
             <img
-              src="/images/logo.png"
-              alt="Galipat Wedding Organizer Boyolali"
-              className="h-8 w-8 rounded-full object-cover border border-white/20"
-              width={32}
+              src="/images/diamor-navbar-logo.png"
+              alt="Diamor Organizer"
+              className="h-7 sm:h-8 w-auto object-contain drop-shadow"
+              width={180}
               height={32}
             />
-            <div className="flex flex-col text-left">
-              <span className="font-display text-sm font-bold tracking-wider text-white leading-none">
-                GALIPAT
-              </span>
-              <span className="font-label-md text-[7.5px] tracking-[0.18em] text-gold-shimmer uppercase font-semibold">
-                WEDDING ORGANIZER
-              </span>
-            </div>
           </a>
 
           {/* Action & Hamburger Button */}
           <div className="flex items-center gap-2">
             <a
-              href="https://wa.me/6288902968424?text=Halo%20Galipat%20Wedding%20Organizer%20Boyolali"
+              href="https://wa.me/6282132560310?text=Halo%20Diamor%20Wedding%20%26%20Event%20Organizer%20Ponorogo"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center min-h-[36px] px-3.5 bg-gold-shimmer text-primary font-label-md text-[11px] tracking-wider uppercase rounded-full font-bold shadow-sm"
+              className="inline-flex items-center justify-center min-h-[36px] px-3.5 bg-gold-shimmer text-[#002268] font-label-md text-[11px] tracking-wider uppercase rounded-full font-bold shadow-sm"
             >
               KONSUL
             </a>
             <button
-              className="p-2 text-white hover:text-gold-shimmer focus:outline-none min-w-[40px] min-h-[40px] flex items-center justify-center rounded-lg transition-colors"
+              className="p-2 text-white hover:text-gold-shimmer focus:outline-none min-w-[40px] min-h-[40px] flex items-center justify-center rounded-lg transition-colors cursor-pointer"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               aria-label={mobileMenuOpen ? 'Tutup Navigasi' : 'Buka Navigasi'}
               aria-expanded={mobileMenuOpen}
@@ -153,7 +136,7 @@ export default function Navbar() {
 
         {/* Mobile Dropdown Drawer */}
         {mobileMenuOpen && (
-          <div className="mt-1.5 bg-[#0f172a] border border-white/15 rounded-2xl p-4 flex flex-col gap-1 shadow-2xl animate-in fade-in slide-in-from-top-2 duration-200">
+          <div className="mt-1.5 bg-[#001438] border border-[#efcf58]/20 rounded-2xl p-4 flex flex-col gap-1 shadow-2xl animate-in fade-in slide-in-from-top-2 duration-200">
             {navLinks.map((link) => {
               const isActive = pathname === link.href;
               return (
@@ -174,16 +157,26 @@ export default function Navbar() {
                 </a>
               );
             })}
-            <div className="pt-3 mt-2 border-t border-white/10">
+            <div className="pt-3 mt-2 border-t border-white/10 flex flex-col gap-2">
               <a
-                href="https://wa.me/6288902968424?text=Halo%20Galipat%20Wedding%20Organizer%20Boyolali%2C%20saya%20ingin%20konsultasi%20paket%20pernikahan"
+                href="https://wa.me/6282132560310?text=Halo%20Diamor%20Wedding%20%26%20Event%20Organizer%20Ponorogo%2C%20saya%20ingin%20konsultasi%20acara"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setMobileMenuOpen(false)}
-                className="flex items-center justify-center gap-2 min-h-[46px] w-full bg-gold-shimmer text-primary font-label-md text-xs tracking-widest uppercase rounded-xl font-bold shadow-md"
+                className="flex items-center justify-center gap-2 min-h-[46px] w-full bg-gold-shimmer text-[#002268] font-label-md text-xs tracking-widest uppercase rounded-xl font-bold shadow-md"
               >
                 <span className="material-symbols-outlined text-base">chat</span>
-                KONSULTASI VIA WHATSAPP
+                WA 1: 0821-3256-0310
+              </a>
+              <a
+                href="https://wa.me/6283142141017?text=Halo%20Diamor%20Wedding%20%26%20Event%20Organizer%20Ponorogo%2C%20saya%20ingin%20konsultasi%20acara"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setMobileMenuOpen(false)}
+                className="flex items-center justify-center gap-2 min-h-[42px] w-full bg-white/10 text-white font-label-md text-xs tracking-widest uppercase rounded-xl font-medium hover:bg-white/15"
+              >
+                <span className="material-symbols-outlined text-base">chat</span>
+                WA 2: 0831-4214-1017
               </a>
             </div>
           </div>

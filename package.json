@@ -1,7 +1,7 @@
 {
-  "name": "galipat-wo",
+  "name": "diamor-organizer",
   "version": "1.0.0",
-  "description": "Website Resmi Galipat Wedding Organizer Boyolali",
+  "description": "Website Resmi Diamor Wedding & Event Organizer Ponorogo",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

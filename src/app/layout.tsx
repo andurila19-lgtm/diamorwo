@@ -19,12 +19,21 @@ const openSans = Open_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Paket Pernikahan Boyolali — Wedding Organizer Terbaik | Galipat Wedding Organizer",
-  description: "Paket Pernikahan Boyolali & Solo Raya dari Galipat Wedding Organizer — WO profesional terpercaya. Pilihan Permata, Zamrud, Mutiara, catering, dekorasi, vendor kurasi. Konsultasi gratis!",
-  keywords: ["paket pernikahan boyolali", "wedding organizer boyolali", "WO solo raya", "galipat wedding organizer", "galipat wo"],
+  title: "Diamor Wedding & Event Organizer di Ponorogo — Elegance in Every Detail",
+  description: "Diamor Wedding & Event Organizer di Ponorogo and beyond. “Elegance in every detail. Making your moments more memorable”. Jasa WO & EO profesional, konsultasi setiap hari 08.00–22.00.",
+  keywords: [
+    "diamor wedding organizer",
+    "diamor event organizer",
+    "diamor organizer",
+    "wedding organizer ponorogo",
+    "event organizer ponorogo",
+    "wo ponorogo",
+    "paket pernikahan ponorogo",
+    "eo ponorogo"
+  ],
   icons: {
-    icon: '/images/logo.png',
-    apple: '/images/logo.png',
+    icon: '/images/diamor-logo.png',
+    apple: '/images/diamor-logo.png',
   }
 };
 
@@ -45,38 +54,65 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "LocalBusiness",
-              "name": "Galipat Wedding Organizer",
-              "alternateName": ["Galipat WO", "Kantor Galipat Wedding Organizer"],
-              "description": "Galipat Wedding Organizer — Partner for your Wedding Party. Jasa Pernikahan dan Wedding Organizer terpercaya di Boyolali dan Solo Raya.",
-              "url": "https://galipatwo.com",
-              "telephone": "+6288902968424",
-              "email": "galipat.weddingorganizer@gmail.com",
+              "@type": "EventPlanningCompany",
+              "name": "Diamor Wedding & Event Organizer",
+              "alternateName": ["Diamor Organizer", "Diamor Wedding Organizer", "Diamor WO Ponorogo"],
+              "logo": "https://diamororganizer.com/images/diamor-logo.png",
+              "image": "https://diamororganizer.com/images/diamor-logo.png",
+              "description": "Elegance in every detail. Making your moments more memorable. Jasa Wedding Organizer dan Event Organizer terpercaya di Ponorogo and beyond.",
+              "url": "https://diamororganizer.com",
+              "telephone": "+6282132560310",
               "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "Jl. Prof. Soeharso Tegalmulyo Timur No.4, Karanggeneng",
-                "addressLocality": "Boyolali",
-                "addressRegion": "Jawa Tengah",
-                "postalCode": "57312",
+                "streetAddress": "Jl. Anilo No.42, Segading, Pakunden, Kec. Ponorogo",
+                "addressLocality": "Ponorogo",
+                "addressRegion": "Jawa Timur",
+                "postalCode": "63416",
                 "addressCountry": "ID"
               },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "addressCountry": "ID"
+              },
+              "openingHoursSpecification": [
+                {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                    "Sunday"
+                  ],
+                  "opens": "08:00",
+                  "closes": "22:00"
+                }
+              ],
               "contactPoint": [
                 {
                   "@type": "ContactPoint",
-                  "telephone": "+6288902968424",
+                  "telephone": "+6282132560310",
                   "contactType": "customer service & wedding consultation",
+                  "areaServed": "ID",
+                  "availableLanguage": ["Indonesian", "Javanese"]
+                },
+                {
+                  "@type": "ContactPoint",
+                  "telephone": "+6283142141017",
+                  "contactType": "event consultation via instagram",
                   "areaServed": "ID",
                   "availableLanguage": ["Indonesian", "Javanese"]
                 }
               ],
               "aggregateRating": {
                 "@type": "AggregateRating",
-                "ratingValue": "4.8",
-                "reviewCount": "76"
+                "ratingValue": "5.0",
+                "reviewCount": "5"
               },
               "sameAs": [
-                "https://linktr.ee/galipatwo",
-                "mailto:galipat.weddingorganizer@gmail.com"
+                "https://instagram.com/diamor.organizer"
               ]
             })
           }}
