@@ -8,25 +8,25 @@ export default function HomePage() {
 
   const heroSlides = [
     {
-      image: '/images/mantu-team-hero.jpg',
+      image: '/images/mantu-team-hero.webp',
       alt: 'Diamor Wedding & Event Organizer Ponorogo',
       title: 'Elegance in Every Detail',
       subtitle: 'Making your moments more memorable — Solusi perencanaan dan pengorganisasian pernikahan & event di Ponorogo and beyond.',
     },
     {
-      image: '/images/hero-portrait.png',
+      image: '/images/hero-portrait.webp',
       alt: 'Pernikahan Elegan Diamor Organizer',
       title: 'Perayaan Sakral Penuh Keanggunan',
       subtitle: 'Memadukan keindahan tradisi adat dan estetika modern dalam harmoni yang tertata rapi.',
     },
     {
-      image: '/images/ballroom-candid.png',
+      image: '/images/ballroom-candid.webp',
       alt: 'Resepsi Tertata Rapi Diamor Organizer',
       title: 'Manajemen Acara Tanpa Rasa Cemas',
       subtitle: 'Master rundown presisi dan koordinasi vendor terpadu agar keluarga dapat menikmati momen bahagia.',
     },
     {
-      image: '/images/joglo-pendopo.jpg',
+      image: '/images/joglo-pendopo.webp',
       alt: 'Intimate Wedding & Event Organizer Ponorogo',
       title: 'Momen Hangat & Penuh Makna',
       subtitle: 'Setiap detik perayaan dirancang dengan dedikasi tinggi demi kenyamanan kedua keluarga besar.',
@@ -49,10 +49,18 @@ export default function HomePage() {
           <div
             key={slide.image}
             className={`hero-slide ${index === currentSlide ? 'active' : ''}`}
-            style={{ backgroundImage: `url(${slide.image})` }}
             role="img"
             aria-label={slide.alt}
-          />
+          >
+            <img
+              src={slide.image}
+              alt={slide.alt}
+              className="w-full h-full object-cover"
+              loading={index === 0 ? 'eager' : 'lazy'}
+              fetchPriority={index === 0 ? 'high' : 'auto'}
+              decoding={index === 0 ? 'sync' : 'async'}
+            />
+          </div>
         ))}
 
         {/* Hero Overlay */}
@@ -99,16 +107,20 @@ export default function HomePage() {
           </div>
 
           {/* Slide Indicators */}
-          <div className="flex justify-center gap-1.5 sm:gap-2 mt-6 sm:mt-12">
+          <div className="flex justify-center items-center gap-1 sm:gap-2 mt-6 sm:mt-12">
             {heroSlides.map((_, idx) => (
               <button
                 key={idx}
                 onClick={() => setCurrentSlide(idx)}
-                className={`h-1.5 transition-all rounded-full ${
-                  idx === currentSlide ? 'w-6 sm:w-8 bg-gold-shimmer' : 'w-2 bg-white/40 hover:bg-white/70'
-                }`}
-                aria-label={`Slide ${idx + 1}`}
-              />
+                className="p-2 flex items-center justify-center cursor-pointer focus:outline-none"
+                aria-label={`Pilih slide ${idx + 1}`}
+              >
+                <span
+                  className={`h-1.5 transition-all rounded-full block ${
+                    idx === currentSlide ? 'w-6 sm:w-8 bg-gold-shimmer' : 'w-2 bg-white/40 hover:bg-white/70'
+                  }`}
+                />
+              </button>
             ))}
           </div>
         </div>
@@ -224,7 +236,7 @@ export default function HomePage() {
               <div className="aspect-[16/10] sm:aspect-[4/5] overflow-hidden rounded-sm border border-white/20 shadow-sm bg-black/10">
                 <img
                   className="w-full h-full object-cover grayscale-[15%] hover:grayscale-0 transition-opacity duration-300"
-                  src="/images/hero-portrait.png"
+                  src="/images/hero-portrait.webp"
                   alt="Diamor Wedding & Event Organizer Ponorogo"
                   loading="lazy"
                   width={600}
@@ -390,42 +402,45 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* GALLERY - BENTO MOSAIC */}
-      <section className="py-10 sm:py-16 md:py-20 bg-surface">
+      {/* GALLERY TEASER MOSAIC */}
+      <section className="py-10 sm:py-16 md:py-20 bg-background">
         <div className="max-w-container-max mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-end mb-4 sm:mb-10">
+          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end mb-6 sm:mb-10 gap-3">
             <div>
-              <span className="font-label-md text-secondary text-[11px] sm:text-xs uppercase tracking-[0.2em] font-semibold block mb-1">
-                Portofolio Visual
+              <span className="font-label-md text-secondary uppercase tracking-[0.2em] text-xs font-semibold block mb-1">
+                Portofolio Perayaan
               </span>
-              <h2 className="font-display text-xl sm:text-3xl text-primary font-semibold">
-                Galeri Inspirasi Diamor
+              <h2 className="font-display text-xl sm:text-3xl md:text-4xl text-primary font-semibold">
+                Galeri Momen Bersejarah
               </h2>
             </div>
             <a
               href="/galeri"
-              className="text-xs font-label-md uppercase tracking-wider text-primary hover:text-gold-shimmer font-semibold flex items-center gap-1"
+              className="inline-flex items-center gap-1.5 text-secondary hover:text-primary font-label-md text-xs tracking-wider uppercase font-semibold transition-colors group"
             >
-              Lihat Semua <span className="material-symbols-outlined text-sm">arrow_forward</span>
+              Lihat Galeri Lengkap
+              <span className="material-symbols-outlined text-sm transition-transform group-hover:translate-x-1">
+                arrow_forward
+              </span>
             </a>
           </div>
 
           {/* Bento Mosaic Grid */}
           <div className="grid grid-cols-3 sm:grid-cols-4 gap-2 sm:gap-4">
             <a href="/galeri" className="col-span-2 row-span-2 aspect-square overflow-hidden rounded-sm bg-black/5 shadow-sm relative group block">
-              <img className="w-full h-full object-cover grayscale-[10%] group-hover:grayscale-0 transition-opacity" src="/images/mantu-team-hero.jpg" alt="Galeri Diamor Organizer" loading="lazy" />
+              <img className="w-full h-full object-cover grayscale-[10%] group-hover:grayscale-0 transition-opacity" src="/images/mantu-team-hero.webp" alt="Galeri Diamor Organizer" loading="lazy" />
               <div className="absolute inset-0 bg-primary/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                 <span className="material-symbols-outlined text-white text-3xl">photo_camera</span>
               </div>
             </a>
             <a href="/galeri" className="aspect-square overflow-hidden rounded-sm bg-black/5 shadow-sm relative group block">
-              <img className="w-full h-full object-cover grayscale-[10%] group-hover:grayscale-0 transition-opacity" src="/images/hero-portrait.png" alt="Galeri Adat Tradisional" loading="lazy" />
+              <img className="w-full h-full object-cover grayscale-[10%] group-hover:grayscale-0 transition-opacity" src="/images/hero-portrait.webp" alt="Galeri Adat Tradisional" loading="lazy" />
             </a>
             <a href="/galeri" className="aspect-square overflow-hidden rounded-sm bg-black/5 shadow-sm relative group block">
-              <img className="w-full h-full object-cover grayscale-[10%] group-hover:grayscale-0 transition-opacity" src="/images/ballroom-candid.png" alt="Galeri Resepsi Modern" loading="lazy" />
+              <img className="w-full h-full object-cover grayscale-[10%] group-hover:grayscale-0 transition-opacity" src="/images/ballroom-candid.webp" alt="Galeri Resepsi Modern" loading="lazy" />
             </a>
             <a href="/galeri" className="col-span-2 sm:col-span-2 aspect-[2/1] overflow-hidden rounded-sm bg-black/5 shadow-sm relative group block">
-              <img className="w-full h-full object-cover grayscale-[10%] group-hover:grayscale-0 transition-opacity" src="/images/joglo-pendopo.jpg" alt="Galeri Intimate Venue" loading="lazy" />
+              <img className="w-full h-full object-cover grayscale-[10%] group-hover:grayscale-0 transition-opacity" src="/images/joglo-pendopo.webp" alt="Galeri Intimate Venue" loading="lazy" />
             </a>
           </div>
         </div>

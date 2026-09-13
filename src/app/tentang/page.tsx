@@ -27,7 +27,7 @@ export default function AboutPage() {
             <div className="lg:col-span-5">
               <div className="aspect-[4/5] overflow-hidden rounded-sm border border-outline-variant/30 shadow-sm bg-black/5">
                 <img
-                  src="/images/hero-portrait.png"
+                  src="/images/hero-portrait.webp"
                   alt="Diamor Wedding & Event Organizer Ponorogo"
                   className="w-full h-full object-cover"
                   width={600}

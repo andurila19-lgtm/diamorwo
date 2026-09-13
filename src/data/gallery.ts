@@ -14,7 +14,7 @@ export const galleryData: GalleryItem[] = [
     category: 'Adat Jawa',
     venue: 'Ponorogo and Beyond',
     couple: 'Inspirasi Adat Tradisional',
-    image: '/images/hero-portrait.png'
+    image: '/images/hero-portrait.webp'
   },
   {
     id: 'g2',
@@ -22,7 +22,7 @@ export const galleryData: GalleryItem[] = [
     category: 'Modern Ballroom',
     venue: 'Ballroom Ponorogo & Sekitarnya',
     couple: 'Inspirasi Modern Elegance',
-    image: '/images/ballroom-candid.png'
+    image: '/images/ballroom-candid.webp'
   },
   {
     id: 'g3',
@@ -30,7 +30,7 @@ export const galleryData: GalleryItem[] = [
     category: 'Intimate Joglo',
     venue: 'Pendopo & Garden Venue',
     couple: 'Inspirasi Intimate Event',
-    image: '/images/joglo-pendopo.jpg'
+    image: '/images/joglo-pendopo.webp'
   },
   {
     id: 'g4',
@@ -38,7 +38,7 @@ export const galleryData: GalleryItem[] = [
     category: 'Detail & Ritual',
     venue: 'Kediaman Mempelai',
     couple: 'Prosesi Adat Penuh Khidmat',
-    image: '/images/siraman-ceremony.png'
+    image: '/images/siraman-ceremony.webp'
   },
   {
     id: 'g5',
@@ -46,7 +46,7 @@ export const galleryData: GalleryItem[] = [
     category: 'Detail & Ritual',
     venue: 'Diamor Portfolio Gallery',
     couple: 'Elegance in Every Detail',
-    image: '/images/wedding-artifacts.jpg'
+    image: '/images/wedding-artifacts.webp'
   },
   {
     id: 'g6',
@@ -54,7 +54,7 @@ export const galleryData: GalleryItem[] = [
     category: 'Adat Jawa',
     venue: 'Venue Acara Ponorogo',
     couple: 'Dedikasi Tim Profesional',
-    image: '/images/mantu-team-hero.jpg'
+    image: '/images/mantu-team-hero.webp'
   },
   {
     id: 'g7',
@@ -62,7 +62,7 @@ export const galleryData: GalleryItem[] = [
     category: 'Modern Ballroom',
     venue: 'Convention Hall Ponorogo',
     couple: 'Momen Berkesan & Hangat',
-    image: '/images/ballroom-candid.png'
+    image: '/images/ballroom-candid.webp'
   },
   {
     id: 'g8',
@@ -70,6 +70,6 @@ export const galleryData: GalleryItem[] = [
     category: 'Intimate Joglo',
     venue: 'Venue Terpilih Jawa Timur',
     couple: 'Inspirasi Perayaan Khidmat',
-    image: '/images/joglo-pendopo.jpg'
+    image: '/images/joglo-pendopo.webp'
   }
 ];

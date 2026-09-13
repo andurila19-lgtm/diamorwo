@@ -23,7 +23,7 @@ export const packagesData: PackageItem[] = [
     price: 'Konsultasi Penawaran',
     shortDesc: 'Pendampingan intensif hari-H untuk memastikan seluruh susunan acara berjalan tertib, khidmat, dan tanpa rasa cemas.',
     longDesc: 'Layanan koordinasi profesional hari-H untuk calon pengantin yang telah menyiapkan vendor sendiri namun membutuhkan tim ahli untuk mengorkestrasi jalannya acara. Tim Diamor memastikan master rundown berjalan tepat waktu, vendor tersinkronisasi, dan keluarga dapat menikmati hari bahagia dengan tenang.',
-    image: '/images/ballroom-candid.png',
+    image: '/images/ballroom-candid.webp',
     venueIncluded: false,
     cateringIncluded: false,
     features: [
@@ -48,7 +48,7 @@ export const packagesData: PackageItem[] = [
     price: 'Konsultasi Penawaran',
     shortDesc: 'Pendampingan menyeluruh dari tahap konsep awal, kurasi vendor, penyusunan anggaran, hingga eksekusi sempurna hari-H.',
     longDesc: 'Solusi lengkap bagi calon mempelai dan keluarga yang menginginkan proses persiapan pernikahan tanpa stres. Dimulai dari perancangan moodboard tematik, penyesuaian anggaran, negosiasi dan pendampingan vendor, gladi resik, hingga pengawalan hari-H dengan standar keanggunan tinggi khas Diamor.',
-    image: '/images/hero-portrait.png',
+    image: '/images/hero-portrait.webp',
     venueIncluded: false,
     cateringIncluded: false,
     features: [
@@ -73,7 +73,7 @@ export const packagesData: PackageItem[] = [
     price: 'Konsultasi Penawaran',
     shortDesc: 'Perayaan pernikahan hangat, intim, dan personal untuk keluarga serta sahabat terdekat dalam suasana khidmat.',
     longDesc: 'Dikhususkan bagi pasangan yang mendambakan momen pernikahan yang hangat, mendalam, dan bermakna bersama lingkaran terdekat. Tim Diamor mengemas setiap detail estetika dan alur acara agar setiap interaksi terasa berkesan, elegan, dan penuh rasa syukur.',
-    image: '/images/joglo-pendopo.jpg',
+    image: '/images/joglo-pendopo.webp',
     venueIncluded: false,
     cateringIncluded: false,
     features: [
@@ -91,7 +91,7 @@ export const packagesData: PackageItem[] = [
     price: 'Konsultasi Penawaran',
     shortDesc: 'Pengawalan upacara tradisi siraman, midodareni, dan sungkeman dengan tata krama adat Jawa yang luhur.',
     longDesc: 'Rangkaian upacara penyucian dan permohonan restu orang tua dalam tradisi luhur Jawa. Tim Diamor siap mengoordinasikan kelengkapan uba rampe, pemandu adat, pranatacara, dan jalannya prosesi agar memancarkan aura sakral nan menyentuh kalbu.',
-    image: '/images/siraman-ceremony.png',
+    image: '/images/siraman-ceremony.webp',
     venueIncluded: false,
     cateringIncluded: false,
     features: [
@@ -108,7 +108,7 @@ export const packagesData: PackageItem[] = [
     price: 'Konsultasi Penawaran',
     shortDesc: 'Pengorganisasian acara lamaran dan seserahan yang tertata rapi, hangat, dan berkesan bagi kedua keluarga besar.',
     longDesc: 'Pertemuan resmi awal antara dua keluarga besar disiapkan dengan santun dan berbobot. Mulai dari penataan seserahan, rundown pasrah panampi, sambutan perwakilan keluarga, hingga prosesi penyematan cincin.',
-    image: '/images/wedding-artifacts.jpg',
+    image: '/images/wedding-artifacts.webp',
     venueIncluded: false,
     cateringIncluded: false,
     features: [
@@ -126,7 +126,7 @@ export const packagesData: PackageItem[] = [
     price: 'Konsultasi Penawaran',
     shortDesc: 'Layanan manajemen acara profesional untuk gathering, perayaan anniversary, seminar, atau private party di Ponorogo and beyond.',
     longDesc: 'Selain pernikahan, Diamor berpengalaman mengelola beragam acara spesial dengan presisi tinggi. Dari temu kangen, acara korporat, pesta ulang tahun/anniversary keluarga, hingga peresmian usaha, kami hadir memastikan setiap detik acara berjalan tertata dan berkelas.',
-    image: '/images/mantu-team-hero.jpg',
+    image: '/images/mantu-team-hero.webp',
     venueIncluded: false,
     cateringIncluded: false,
     features: [

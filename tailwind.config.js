@@ -28,8 +28,8 @@ module.exports = {
         'primary-dark': '#001a4e',
         'primary-fixed': '#dbe7fb',
         'primary-fixed-dim': '#a1c2f7',
-        // Diamor Gold (from official logo #efcf58)
-        secondary: '#c89928',
+        // Diamor Gold (accessible on light surfaces: #875e0c has 5.77:1 contrast ratio)
+        secondary: '#875e0c',
         'secondary-container': '#fff9e6',
         'secondary-fixed': '#fdeda8',
         'secondary-fixed-dim': '#f7dc7a',

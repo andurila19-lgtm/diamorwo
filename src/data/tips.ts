@@ -19,7 +19,7 @@ export const tipsData: TipItem[] = [
     date: '14 Agustus 2025',
     readTime: '4 menit baca',
     excerpt: 'Memahami makna filosofis di balik cengkeh, godheg, dan cunduk mentul agar riasan pengantin memancarkan aura sakral nan anggun.',
-    image: '/images/hero-portrait.png',
+    image: '/images/hero-portrait.webp',
     content: [
       'Pernikahan adat Jawa kaya akan simbolisme luhur. Paes yang dilukis di dahi calon pengantin bukan sekadar estetika riasan, melainkan doa suci bagi ketentraman rumah tangga.',
       'Paes Solo Putri menonjolkan bentuk daun sirih melengkung halus dengan warna hitam pekat yang melambangkan kelembutan hati dan keteguhan budi pekerti.',
@@ -35,7 +35,7 @@ export const tipsData: TipItem[] = [
     date: '28 Juli 2025',
     readTime: '5 menit baca',
     excerpt: 'Rumus proporsional rasio prasmanan dan gubukan yang efektif untuk perayaan pernikahan di wilayah Ponorogo and beyond.',
-    image: '/images/ballroom-candid.png',
+    image: '/images/ballroom-candid.webp',
     content: [
       'Kecukupan hidangan adalah prioritas utama untuk menghormati para tamu yang hadir. Menghitung porsi katering memerlukan rumus rasio yang teruji.',
       'Rumus umum: Jika mengundang 500 undangan (asumsi 1.000 orang hadir bersama pasangan), rasio ideal adalah 60% menu prasmanan (600 porsi) dan total gubukan sebanyak 4–5 kali lipat jumlah undangan (2.000–2.500 porsi gubukan aneka variasi).',
@@ -51,7 +51,7 @@ export const tipsData: TipItem[] = [
     date: '10 Juni 2025',
     readTime: '6 menit baca',
     excerpt: 'Panduan bertahap mengunci tanggal impian, pemilihan vendor, technical meeting, dan gladi resik bersama Diamor Organizer.',
-    image: '/images/wedding-artifacts.jpg',
+    image: '/images/wedding-artifacts.webp',
     content: [
       'Mempersiapkan pernikahan yang tenang dan berkesan membutuhkan timeline yang terarah tanpa tergesa-gesa.',
       'H-6 Bulan: Kunci tanggal acara, tentukan konsep utama, dan tunjuk wedding organizer terpercaya Anda.',
